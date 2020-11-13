@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'package:proyecto_itca/src/pag/carreras.dart';
+import 'package:proyecto_itca/src/pag/oficinas.dart';
+
+import 'infor_page.dart';
+
 class HomePage extends StatelessWidget {
   static final String routeName = 'home';
 
@@ -32,7 +37,8 @@ class HomePage extends StatelessWidget {
   Widget _bottomNavigationBar(BuildContext context) {
     return Theme(
       data: Theme.of(context).copyWith(
-          canvasColor: Color.fromRGBO(55, 57, 84, 1.0),
+          canvasColor: Colors.blue[400],
+          //canvasColor: Color.fromRGBO(55, 57, 84, 1.0),
           primaryColor: Colors.white70,
           textTheme: Theme.of(context).textTheme.copyWith(
               caption: TextStyle(color: Color.fromRGBO(116, 117, 152, 1.0)))),
@@ -70,12 +76,17 @@ class HomePage extends StatelessWidget {
           ),
           //----------------------------------------------
           ListTile(
-            leading: Icon(Icons.assignment, color: Colors.lightBlue),
-            trailing: Icon(Icons.keyboard_arrow_right),
-            title: Text('Información'),
-            subtitle: Text('Informacion importante'),
-            onTap: () {},
-          ),
+              leading: Icon(Icons.assignment, color: Colors.lightBlue),
+              trailing: Icon(Icons.keyboard_arrow_right),
+              title: Text('Información'),
+              subtitle: Text('Informacion importante'),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(
+                    context,
+                    new MaterialPageRoute(
+                        builder: (BuildContext context) => InforPage()));
+              }),
           Divider(),
           //----------------------------------------------
           ListTile(
@@ -83,7 +94,13 @@ class HomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('Oferta educativa'),
             subtitle: Text('Carreras'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (BuildContext context) => CarrerasPage()));
+            },
           ),
           Divider(),
           //----------------------------------------------
@@ -92,7 +109,13 @@ class HomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('Oficinas'),
             subtitle: Text('Departamentos del Tec'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (BuildContext context) => OficinasPage()));
+            },
           ),
           Divider(),
           //----------------------------------------------

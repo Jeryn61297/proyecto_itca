@@ -1,5 +1,3 @@
-//import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:proyecto_itca/src/pages/home_page.dart';
 
