@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_itca/src/pages/home_page.dart';
-import 'package:proyecto_itca/src/pages/scroll_page.dart';
+import 'package:proyecto_itca/src/home_pages/home_page.dart';
+import 'package:proyecto_itca/src/home_pages/scroll_page.dart';
 
 void main() {
   runApp(MyApp());
