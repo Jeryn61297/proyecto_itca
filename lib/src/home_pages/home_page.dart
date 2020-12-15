@@ -16,10 +16,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: PageView(
         scrollDirection: Axis.horizontal,
-        children: [
-          _disPantalla(context),
-          _crearMenu(context),
-        ],
+        children: [_disPantalla(context), _crearMenu(context)],
       ),
     );
   }
@@ -134,10 +131,7 @@ class HomePage extends StatelessWidget {
               'cd_alta@yahoo.com',
               style: TextStyle(color: Colors.white, fontSize: 16.0),
             ),
-            currentAccountPicture: new CircleAvatar(
-              backgroundImage: new NetworkImage(
-                  'https://scontent.fcvj2-1.fna.fbcdn.net/v/t1.0-9/124026147_3384021368314323_7951238793877942294_n.jpg?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeFciWXpeaLEMUOHPijOx8iFhg1SPPg7vsyGDVI8-Du-zEKmGi7iOikL-7zWo_2XuijXWprZ6cM04VJuguOatwLP&_nc_ohc=ozNKIw9FT1gAX9w-hlP&_nc_ht=scontent.fcvj2-1.fna&oh=cd4f4baa2f9bbadbf0ec4c610544f456&oe=5FD0BBC6'),
-            ),
+            currentAccountPicture: new CircleAvatar(),
           ),
           //----------------------------------------------
           ListTile(

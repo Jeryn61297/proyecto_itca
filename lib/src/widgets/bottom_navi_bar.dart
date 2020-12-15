@@ -7,6 +7,7 @@ class BottomNaviBar extends StatelessWidget {
   }
 }
 
+// ignore: unused_element
 Widget _bottomNavigationBar(BuildContext context) {
   return Theme(
     data: Theme.of(context).copyWith(

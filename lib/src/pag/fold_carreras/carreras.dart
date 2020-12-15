@@ -46,8 +46,8 @@ class CarrerasPage extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(50.0),
             gradient: LinearGradient(colors: [
-              Color.fromRGBO(236, 98, 188, 1.0),
-              Color.fromRGBO(241, 142, 172, 1.0)
+              Color.fromRGBO(206, 58, 88, 1.0),
+              Color.fromRGBO(131, 12, 72, 1.0)
             ]),
           ),
         ));
@@ -83,6 +83,7 @@ class CarrerasPage extends StatelessWidget {
   }
 
 //---BottomNavigator
+
   Widget _bottomNavigationBar(BuildContext context) {
     return Theme(
       data: Theme.of(context).copyWith(
@@ -104,6 +105,7 @@ class CarrerasPage extends StatelessWidget {
     );
   }
 
+//----------------------------------------------
   Widget _botonesRedondeados() {
     return Table(
       children: [

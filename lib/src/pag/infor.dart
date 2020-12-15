@@ -7,32 +7,47 @@ class InforPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Información'),
+        title: Text('Informacion'),
       ),
-      bottomNavigationBar: _bottomNavigationBar(context),
-    );
-  }
-
-  Widget _bottomNavigationBar(BuildContext context) {
-    return Theme(
-      data: Theme.of(context).copyWith(
-          canvasColor: Colors.purple[900],
-          primaryColor: Colors.white70,
-          textTheme: Theme.of(context).textTheme.copyWith(
-              caption: TextStyle(color: Color.fromRGBO(116, 117, 152, 1.0)))),
-      child: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.home, size: 37.0), title: Container()),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.calendar_today, size: 30.0),
-            title: Container(),
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.supervised_user_circle, size: 30.0),
-              title: Container()),
+      body: Stack(
+        children: <Widget>[
+          SingleChildScrollView(
+            child: Column(
+              children: <Widget>[_TituloPage(), _Escudo(), _Datos()],
+            ),
+          )
         ],
       ),
     );
   }
+}
+
+Widget _TituloPage() {
+  return Container(
+      alignment: Alignment.center,
+      width: double.infinity,
+      height: 100,
+      color: Colors.green,
+      child: Text('Instituto Tecnologico \n de Cd. Altamirano',
+          style: TextStyle(
+              color: Colors.black, fontSize: 28, fontWeight: FontWeight.w500)));
+}
+
+Widget _Escudo() {
+  return Container(
+    width: double.infinity,
+    height: 300,
+    color: Colors.grey,
+    child: (Image(
+      image: AssetImage('assets/images/itca.png'),
+    )),
+  );
+}
+
+Widget _Datos() {
+  return Container(
+    width: double.infinity,
+    height: 200,
+    color: Colors.blue,
+  );
 }
