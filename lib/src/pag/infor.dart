@@ -7,7 +7,7 @@ class InforPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Informacion'),
+        title: Text('Información'),
       ),
       body: Stack(
         children: <Widget>[
@@ -27,7 +27,7 @@ Widget _TituloPage() {
       alignment: Alignment.center,
       width: double.infinity,
       height: 100,
-      color: Colors.green,
+      //color: Colors.green,
       child: Text('Instituto Tecnologico \n de Cd. Altamirano',
           style: TextStyle(
               color: Colors.black, fontSize: 28, fontWeight: FontWeight.w500)));
@@ -37,9 +37,9 @@ Widget _Escudo() {
   return Container(
     width: double.infinity,
     height: 300,
-    color: Colors.grey,
+    //color: Colors.grey,
     child: (Image(
-      image: AssetImage('assets/images/itca.png'),
+      image: AssetImage('assets/images/escudo.png'),
     )),
   );
 }
@@ -48,6 +48,6 @@ Widget _Datos() {
   return Container(
     width: double.infinity,
     height: 200,
-    color: Colors.blue,
+    //color: Colors.blue,
   );
 }
