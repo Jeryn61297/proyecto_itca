@@ -34,7 +34,7 @@ Widget _TituloPage() {
       width: double.infinity,
       height: 100,
       //color: Colors.green,
-      child: Text('Instituto Tecnologico \n de Cd. Altamirano',
+      child: Text('  Instituto Tecnológico \n     de Cd. Altamirano',
           style: TextStyle(
               color: Colors.black, fontSize: 28, fontWeight: FontWeight.w500)));
 }
@@ -65,34 +65,47 @@ Widget _Direccion() {
 }
 
 Widget _Datos() {
-  return Container(
-    width: double.infinity,
-    height: 900,
-    child: Column(
-      children: [
-        Text('   '),
-        Text(
-          'Mision',
-          style: TextStyle(
-              color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
-        ),
-        Text(
-          ' Formar profesionales competitivos, con \n sentido  humanista  que  contribuyan  al \n desarrollo de país.',
-          style: TextStyle(color: Colors.black, fontSize: 16),
-        ),
-        Text(''),
-        Text(''),
-        Text(
-          'Vision',
-          style: TextStyle(
-              color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
-        ),
-        Text(
-          '  Ser  una  Institución  educativa  de   alto \n  desempeño con valores declarados que \n  impulse su desarrollo sostenido a través \n  de la mejora continua',
-          style: TextStyle(color: Colors.black, fontSize: 16),
-        ),
-      ],
+  return Padding(
+    padding: EdgeInsets.symmetric(horizontal: 20),
+    child: Container(
+      width: double.infinity,
+      height: 500,
+      child: Column(
+        children: [
+          Text('   '),
+          Text(
+            'Misión',
+            style: TextStyle(
+                color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
+          ),
+          Text(
+            'Formar profesionales competitivos, con sentido humanista que contribuyan al desarrollo de país.',
+            style: TextStyle(color: Colors.black, fontSize: 16),
+          ),
+          Text(''),
+          Text(''),
+          Text(
+            'Visión',
+            style: TextStyle(
+                color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
+          ),
+          Text(
+            '  Ser  una  Institución  educativa  de   alto \n  desempeño con valores declarados que \n  impulse su desarrollo sostenido a través \n  de la mejora continua',
+            style: TextStyle(color: Colors.black, fontSize: 16),
+          ),
+          Spacer(),
+          Text(
+            'Forma de pago',
+            style: TextStyle(
+                color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
+          ),
+          Text(
+            'Los depositos dirigidos al Instituto Tecnológico de  Cd. Altamirano deberan ser realizados al banco Santander S.A.\nAl número de cuenta: 65-50760541-2 \nClave interbancaria: 014266655076054126 \nTitular: TECNM INSTITUTO TECNOLÓGICO DE \CD. ALTAMIRANO ',
+            style: TextStyle(color: Colors.black, fontSize: 16),
+          ),
+        ],
+      ),
+      //color: Colors.yellow,
     ),
-    //color: Colors.yellow,
   );
 }
