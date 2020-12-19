@@ -16,9 +16,10 @@ class InforPage extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 _TituloPage(),
-                _Escudo(),
+                _Foto(),
                 _Direccion(),
-                _Datos()
+                _Datos(),
+                _Contacto()
               ],
             ),
           )
@@ -39,13 +40,13 @@ Widget _TituloPage() {
               color: Colors.black, fontSize: 28, fontWeight: FontWeight.w500)));
 }
 
-Widget _Escudo() {
+Widget _Foto() {
   return Container(
     width: double.infinity,
-    height: 300,
-    //color: Colors.grey,
+    height: 200,
+    color: Colors.grey,
     child: (Image(
-      image: AssetImage('assets/images/itca.png'),
+      image: AssetImage('assets/itca.jpg'),
     )),
   );
 }
@@ -66,10 +67,10 @@ Widget _Direccion() {
 
 Widget _Datos() {
   return Padding(
-    padding: EdgeInsets.symmetric(horizontal: 20),
+    padding: EdgeInsets.symmetric(horizontal: 25),
     child: Container(
       width: double.infinity,
-      height: 500,
+      height: 550,
       child: Column(
         children: [
           Text('   '),
@@ -81,6 +82,7 @@ Widget _Datos() {
           Text(
             'Formar profesionales competitivos, con sentido humanista que contribuyan al desarrollo de país.',
             style: TextStyle(color: Colors.black, fontSize: 16),
+            textAlign: TextAlign.justify,
           ),
           Text(''),
           Text(''),
@@ -90,22 +92,48 @@ Widget _Datos() {
                 color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
           ),
           Text(
-            '  Ser  una  Institución  educativa  de   alto \n  desempeño con valores declarados que \n  impulse su desarrollo sostenido a través \n  de la mejora continua',
+            'Ser una Institución educativa de alto desempeño con valores declarados que impulse su desarrollo sostenido a través de la mejora continua.',
             style: TextStyle(color: Colors.black, fontSize: 16),
+            textAlign: TextAlign.justify,
           ),
-          Spacer(),
+          //Spacer(),
+          Text(''),
+          Text(''),
           Text(
             'Forma de pago',
             style: TextStyle(
                 color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
           ),
           Text(
-            'Los depositos dirigidos al Instituto Tecnológico de  Cd. Altamirano deberan ser realizados al banco Santander S.A.\nAl número de cuenta: 65-50760541-2 \nClave interbancaria: 014266655076054126 \nTitular: TECNM INSTITUTO TECNOLÓGICO DE \CD. ALTAMIRANO ',
+            'Los depositos dirigidos al Instituto Tecnológico de  Cd. Altamirano deberan ser realizados al banco Santander S.A. al número de cuenta: 65-50760541-2 Clave interbancaria: 014266655076054126 \nTitular: TECNM INSTITUTO TECNOLÓGICO DE CD. ALTAMIRANO ',
             style: TextStyle(color: Colors.black, fontSize: 16),
+            textAlign: TextAlign.justify,
           ),
         ],
       ),
       //color: Colors.yellow,
     ),
+  );
+}
+
+Widget _Contacto() {
+  return SafeArea(
+    child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+        width: double.infinity,
+        height: 900,
+        //color: Colors.grey,
+        child: Row(children: <Widget>[
+          Column(
+            children: [
+              Text('hola'),
+              Text('Amigos'),
+            ],
+          ),
+          Spacer(),
+          Column(
+            children: [Text('Hola'), Text('Amigos')],
+          )
+        ])),
   );
 }

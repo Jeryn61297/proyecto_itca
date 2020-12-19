@@ -131,7 +131,9 @@ class HomePage extends StatelessWidget {
               'cd_alta@yahoo.com',
               style: TextStyle(color: Colors.white, fontSize: 16.0),
             ),
-            currentAccountPicture: new CircleAvatar(),
+            currentAccountPicture: new CircleAvatar(
+              child: Image.asset('assets/images/escudo.png'),
+            ),
           ),
           //----------------------------------------------
           ListTile(
