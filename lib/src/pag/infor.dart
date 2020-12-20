@@ -19,7 +19,8 @@ class InforPage extends StatelessWidget {
                 _Foto(),
                 _Direccion(),
                 _Datos(),
-                _Contacto()
+                _Contacto(),
+                _Barra()
               ],
             ),
           )
@@ -77,7 +78,10 @@ Widget _Datos() {
           Text(
             'Misión',
             style: TextStyle(
-                color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
+              color: Colors.black,
+              fontSize: 29,
+              fontWeight: FontWeight.w700,
+            ),
           ),
           Text(
             'Formar profesionales competitivos, con sentido humanista que contribuyan al desarrollo de país.',
@@ -119,21 +123,80 @@ Widget _Datos() {
 Widget _Contacto() {
   return SafeArea(
     child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
         width: double.infinity,
-        height: 900,
+        height: 300,
         //color: Colors.grey,
         child: Row(children: <Widget>[
           Column(
             children: [
-              Text('hola'),
-              Text('Amigos'),
+              //-ICONO1---------------------
+              Icon(
+                Icons.phone,
+                color: Colors.black54,
+                size: 35,
+              ),
+              Text(
+                'Número',
+                style: TextStyle(fontSize: 13),
+              ),
+
+              Spacer(),
+              //-ICONO2-------------------------
+              Icon(
+                Icons.phone_android,
+                color: Colors.lightGreen,
+                size: 35,
+              ),
+              Text('WhatsApp'),
+              Spacer(),
+              //-ICONO3----------------------------
+              Icon(
+                Icons.mail,
+                color: Colors.yellow,
+                size: 35,
+              ),
+              Text(
+                'E-mail',
+                style: TextStyle(fontSize: 13),
+              ),
+
+              Spacer(),
+              //-ICONO4----------------------------
+              Icon(
+                Icons.computer,
+                color: Colors.blue,
+                size: 35,
+              ),
+              Text(
+                'Facebook',
+                style: TextStyle(fontSize: 13),
+              ),
             ],
           ),
           Spacer(),
           Column(
-            children: [Text('Hola'), Text('Amigos')],
+            children: [
+              Text(''),
+              Text(' 767 672-1213'),
+              Spacer(),
+              Text(''),
+              Text(' 7671047475'),
+              Spacer(),
+              Text(''),
+              Text(' it_alta@yahoo.com'),
+              Spacer(),
+              Text('Instituto Tecnológico \n  de Cd Altamirano')
+            ],
           )
         ])),
+  );
+}
+
+Widget _Barra() {
+  return Container(
+    width: double.infinity,
+    height: 10,
+    color: Colors.grey,
   );
 }
