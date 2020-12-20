@@ -176,19 +176,9 @@ Widget _Contacto() {
           ),
           Spacer(),
           Column(
-            children: [
-              Text(''),
-              Text(' 767 672-1213'),
-              Spacer(),
-              Text(''),
-              Text(' 7671047475'),
-              Spacer(),
-              Text(''),
-              Text(' it_alta@yahoo.com'),
-              Spacer(),
-              Text('Instituto Tecnológico \n  de Cd Altamirano')
-            ],
-          )
+              //textos
+
+              )
         ])),
   );
 }
