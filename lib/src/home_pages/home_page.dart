@@ -73,6 +73,10 @@ class HomePage extends StatelessWidget {
                                   fontWeight: FontWeight.w900),
                             ),
                           ),
+                          Align(
+                            alignment: Alignment.topRight,
+                            child: Icon(Icons.arrow_back_outlined),
+                          ),
                           Container(),
                         ],
                       ),
