@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/carreras.dart';
 import 'package:proyecto_itca/src/pag/infor.dart';
 import 'package:proyecto_itca/src/pag/oficinas.dart';
+import 'package:proyecto_itca/src/pag/venta_plantas.dart';
 
 import 'dis_pantalla.dart';
 import 'header_appbar.dart';
@@ -248,7 +249,13 @@ class HomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('Servicio de venta'),
             subtitle: Text('Plantas regionales'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (BuildContext context) => VentaPlantasPage()));
+            },
           ),
           Divider()
           //----------------------------------------------
