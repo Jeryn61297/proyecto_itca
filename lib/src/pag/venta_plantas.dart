@@ -191,11 +191,11 @@ Widget _Targeta6() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Parota',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Enterolobium cyclocarpum',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
@@ -213,11 +213,11 @@ Widget _Targeta7() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Neem',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Azadirachta indica A.Juss',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
@@ -235,11 +235,11 @@ Widget _Targeta8() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Guanábana',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Annona muricata L',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
@@ -257,11 +257,11 @@ Widget _Targeta9() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Guaje',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Leucaena leucocephala',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
@@ -279,11 +279,11 @@ Widget _Targeta10() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Mango',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Mangifera indica',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
@@ -301,11 +301,11 @@ Widget _Targeta11() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Acacia',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Delonix regia',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
@@ -323,11 +323,11 @@ Widget _Targeta12() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Duranta',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Duranta erecta',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
@@ -345,11 +345,11 @@ Widget _Targeta13() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Cacahuananche',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Licania arborea',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
