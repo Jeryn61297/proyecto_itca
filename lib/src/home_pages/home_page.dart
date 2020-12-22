@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_itca/src/pag/fold_carreras/carreras.dart';
@@ -55,6 +56,8 @@ class HomePage extends StatelessWidget {
                     Expanded(
                       child: Stack(
                         children: <Widget>[
+                          // dar estilo
+                          //Icon(Icons.arrow_back),
                           Image.asset(
                             "assets/images/itca.png",
                             width: 180,
@@ -73,9 +76,14 @@ class HomePage extends StatelessWidget {
                                   fontWeight: FontWeight.w900),
                             ),
                           ),
+
                           Align(
                             alignment: Alignment.topRight,
-                            child: Icon(Icons.arrow_back_outlined),
+                            child: Icon(
+                              Icons.arrow_back_outlined,
+                              color: Colors.black54,
+                              size: 38,
+                            ),
                           ),
                           Container(),
                         ],
