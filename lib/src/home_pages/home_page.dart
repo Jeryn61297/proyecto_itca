@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
             ClipPath(
               clipper: MyClipper(),
               child: Container(
-                padding: EdgeInsets.only(left: 10, top: 0, right: 50),
+                padding: EdgeInsets.only(left: 10, top: 0, right: 23),
                 height: 240,
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -56,8 +56,6 @@ class HomePage extends StatelessWidget {
                     Expanded(
                       child: Stack(
                         children: <Widget>[
-                          // dar estilo
-                          //Icon(Icons.arrow_back),
                           Image.asset(
                             "assets/images/itca.png",
                             width: 180,
@@ -69,20 +67,23 @@ class HomePage extends StatelessWidget {
                             //left: 0,
                             right: 0,
                             child: Text(
-                              "  Tec \n  Altamirano",
+                              "  Tec   \n  Altamirano  ",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 27.0,
                                   fontWeight: FontWeight.w900),
                             ),
                           ),
-
                           Align(
                             alignment: Alignment.topRight,
-                            child: Icon(
-                              Icons.arrow_back_outlined,
-                              color: Colors.black54,
-                              size: 38,
+                            child: Container(
+                              width: 30,
+                              height: 30,
+                              child: Icon(
+                                Icons.arrow_back_outlined,
+                                color: Colors.black54,
+                                size: 38,
+                              ),
                             ),
                           ),
                           Container(),
