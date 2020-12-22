@@ -169,11 +169,11 @@ Widget _Targeta5() {
       children: [
         ListTile(
           title: const Text(
-            'Primavera',
+            'Papayo',
             style: TextStyle(color: Colors.black, fontSize: 25),
           ),
           subtitle: Text(
-            'Tabebuia donnell',
+            'Carica papaya',
             style:
                 TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 15),
           ),
