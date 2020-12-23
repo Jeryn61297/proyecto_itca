@@ -28,7 +28,6 @@ Widget _Titulo() {
     alignment: Alignment.center,
     width: double.infinity,
     height: 70,
-    //color: Colors.blue[100],
     child: Text(
       'Imagen satelital',
       style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
@@ -40,7 +39,6 @@ Widget _Mapa() {
   return Container(
     width: double.infinity,
     height: 350,
-    //color: Colors.black12,
     child: Image(
       image: AssetImage('assets/images/croquis.jpg'),
     ),
@@ -50,10 +48,8 @@ Widget _Mapa() {
 Widget _Datos() {
   return Container(
     padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-    //alignment: Alignment.centerLeft,
     width: 400,
     height: 200,
-    //color: Colors.grey,
     child: Row(
       children: <Widget>[
         Column(

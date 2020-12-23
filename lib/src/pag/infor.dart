@@ -45,7 +45,7 @@ Widget _Foto() {
   return Container(
     width: double.infinity,
     height: 200,
-    color: Colors.grey,
+    //color: Colors.grey,
     child: (Image(
       image: AssetImage('assets/itca.jpg'),
     )),
@@ -71,7 +71,7 @@ Widget _Datos() {
     padding: EdgeInsets.symmetric(horizontal: 25),
     child: Container(
       width: double.infinity,
-      height: 550,
+      height: 450,
       child: Column(
         children: [
           Text('   '),
@@ -125,7 +125,7 @@ Widget _Contacto() {
     child: Container(
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
         width: double.infinity,
-        height: 300,
+        height: 280,
         //color: Colors.grey,
         child: Row(children: <Widget>[
           Column(

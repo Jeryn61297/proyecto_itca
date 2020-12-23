@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ITCA',
-      initialRoute: HomePage.routeName,
+      initialRoute: ScrollPage.routeName,
       routes: {
         HomePage.routeName: (BuildContext context) => HomePage(),
         ScrollPage.routeName: (BuildContext context) => ScrollPage(),
