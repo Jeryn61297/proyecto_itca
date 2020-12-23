@@ -1,5 +1,6 @@
 //import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/pag/croquis.dart';
 
 import 'package:proyecto_itca/src/pag/fold_carreras/carreras.dart';
 import 'package:proyecto_itca/src/pag/infor.dart';
@@ -209,7 +210,13 @@ class HomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('Nuestro Tec'),
             subtitle: Text('Croquis'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (BuildContext context) => CroquisPage()));
+            },
           ),
           Divider(),
           //----------------------------------------------
