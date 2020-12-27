@@ -48,7 +48,6 @@ flutter:
   assets:
   - assets/itca.jpg
   - assets/fachada.jpg
-  - assets/letras.jpg
   - assets/images/
   #   - images/a_dot_ham.jpeg
 

@@ -42,14 +42,14 @@ class ScrollPage extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       child: Image(
-        image: AssetImage('assets/fachada.jpg'),
+        image: AssetImage('assets/images/105.jpg'),
         fit: BoxFit.cover,
       ),
     );
   }
 
   Widget _textos() {
-    final estiloTexto = TextStyle(color: Colors.white, fontSize: 40.0);
+    //final estiloTexto = TextStyle(color: Colors.white, fontSize: 40.0);
     return SafeArea(
       child: Column(
         children: <Widget>[
