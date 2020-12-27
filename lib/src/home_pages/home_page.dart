@@ -229,6 +229,7 @@ class HomePage extends StatelessWidget {
           ),
           Divider(),
           //----------------------------------------------
+          /*
           ListTile(
             leading: Icon(Icons.people, color: Colors.lightBlue),
             trailing: Icon(Icons.keyboard_arrow_right),
@@ -236,7 +237,7 @@ class HomePage extends StatelessWidget {
             subtitle: Text('Estudiantes unidos'),
             onTap: () {},
           ),
-          Divider(),
+          Divider(), */
           //----------------------------------------------
           ListTile(
             leading: Icon(Icons.request_page, color: Colors.lightBlue),
