@@ -53,11 +53,12 @@ class ScrollPage extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: <Widget>[
-          SizedBox(height: 300.0),
-          Text(' ', style: estiloTexto),
-          Text(' ', style: estiloTexto),
+          SizedBox(height: 450.0),
+          Text('Desliza', style: TextStyle(color: Colors.black, fontSize: 20)),
+          Text('(hacia arriba)',
+              style: TextStyle(color: Colors.black87, fontSize: 20)),
           Expanded(child: Container()),
-          Icon(Icons.keyboard_arrow_down, size: 70.0, color: Colors.white)
+          Icon(Icons.keyboard_arrow_up, size: 70.0, color: Colors.white)
         ],
       ),
     );
@@ -65,11 +66,12 @@ class ScrollPage extends StatelessWidget {
 
 //Pagina2
 //--------------------------------------------------
+
   Widget _pagina2(context) {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      //color: Colors.blue[300],
+      color: Colors.blue[100],
       child: Center(
         child: RaisedButton(
           shape: StadiumBorder(),
