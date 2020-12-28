@@ -66,19 +66,35 @@ class ScrollPage extends StatelessWidget {
 
 //Pagina2
 //--------------------------------------------------
-
   Widget _pagina2(context) {
+    return Stack(
+      children: <Widget>[_imagenFondo2(), _boton(context)],
+    );
+  }
+
+  Widget _imagenFondo2() {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      color: Colors.blue[100],
+      child: Image(
+        image: AssetImage('assets/images/letras.jpg'),
+        fit: BoxFit.cover,
+      ),
+    );
+  }
+
+  Widget _boton(context) {
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      //color: Colors.blue[100],
       child: Center(
         child: RaisedButton(
           shape: StadiumBorder(),
           color: Colors.blue,
           textColor: Colors.white,
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
+            padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 15.0),
             child: Text('Bienvenidos', style: TextStyle(fontSize: 20.0)),
           ),
           onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
