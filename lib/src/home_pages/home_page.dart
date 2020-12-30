@@ -4,6 +4,7 @@ import 'package:proyecto_itca/src/pag/croquis.dart';
 
 import 'package:proyecto_itca/src/pag/fold_carreras/carreras.dart';
 import 'package:proyecto_itca/src/pag/infor.dart';
+import 'package:proyecto_itca/src/pag/inscripciones.dart';
 import 'package:proyecto_itca/src/pag/oficinas.dart';
 import 'package:proyecto_itca/src/pag/tarifas.dart';
 import 'package:proyecto_itca/src/pag/venta_plantas.dart';
@@ -201,7 +202,13 @@ class HomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('Inscripciones'),
             subtitle: Text('Reinscripciones'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (BuildContext context) => InscripcionesPage()));
+            },
           ),
           Divider(),
           //----------------------------------------------
