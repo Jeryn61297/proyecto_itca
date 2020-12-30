@@ -40,7 +40,7 @@ Widget _Mapa() {
     width: double.infinity,
     height: 350,
     child: Image(
-      image: AssetImage('assets/images/croquis.jpg'),
+      image: AssetImage('assets/images/croquis3.jpg'),
     ),
   );
 }
