@@ -51,7 +51,7 @@ Widget _Nota() {
       child: Column(
         children: <Widget>[
           Text(
-            '¡No salgas de casa!',
+            '<< ¡No salgas de casa! >>',
             style: TextStyle(
                 color: Colors.red, fontSize: 24, fontWeight: FontWeight.w700),
           ),
@@ -117,29 +117,66 @@ Widget _Pasos() {
     padding: EdgeInsets.symmetric(horizontal: 5),
     child: Container(
       width: double.infinity,
-      height: 800,
-      color: Colors.yellow[100],
+      height: 980,
+      color: Colors.cyan[50],
       child: (Column(
         children: <Widget>[
           SizedBox(
             height: 10,
           ),
           Text(
-            '> Realizar un pago por \$1500 al banco Santander (Mexico), S. A.  \nNumero de cuenta: 65507605412.',
-            style: TextStyle(color: Colors.black, fontSize: 19),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Text(
-            '> Envía tu comprobante de pago al Depto de Recursos Financieros, por medio de un correo electronico rf_cdaltamirano@tecnm.mx o a través de WhatsApp al 732-113-00-15 para solicitar tu recibo de oficial de cobro.',
+            '1.- Realizar el pago correspondiente por \$1500 M.N. al banco Santander (Mexico), S. A.  \nNumero de cuenta: 65507605412.',
             style: TextStyle(color: Colors.black, fontSize: 19),
             textAlign: TextAlign.justify,
           ),
           SizedBox(
             height: 10,
           ),
-          Text('Solicitar ')
+          Text(
+            '2.- Envía tu comprobante de pago al Depto de Recursos Financieros, por medio de un correo electronico rf_cdaltamirano@tecnm.mx o a través de WhatsApp al 732-113-00-15 para solicitar tu recibo de oficial de cobro.',
+            style: TextStyle(color: Colors.black, fontSize: 19),
+            textAlign: TextAlign.justify,
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            '3.- Solicitar la inscripción o reinscripción al Depto de Servicios Escolares, por lo que deberás adjuntar tu recibo oficial de pago proporcionado por el Depto de Recursos Financieros en el siguiente formulario: \nhttps://forms.gle/pbFdPoDHdem6vWbV7 ',
+            style: TextStyle(color: Colors.black, fontSize: 19),
+            textAlign: TextAlign.justify,
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            '4.- Recibirás una notificación de inscripción en la App Movil del ITCA sobre la fecha en que deberas realizarla con tus datos de acceso al SII.',
+            style: TextStyle(color: Colors.black, fontSize: 19),
+            textAlign: TextAlign.justify,
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            '5.- Para realizar la selección de materias, deberás solicitar al Depto de Division de estudios la carga academica, en el siguiente correo: dep_cdaltamirano@tecnm.mx o por WhatsApp al 732-108-72-95; o bien realizarla con tu cuenta en el SII www.sii.italtamirano.edu.mx para realizar la selección de materias.',
+            style: TextStyle(color: Colors.black, fontSize: 19),
+            textAlign: TextAlign.justify,
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            '6.- El Depto de Division de Estudios, enviará por correo electrónico el horario firmado y sellado al alumno(a) inscrito(a).',
+            style: TextStyle(color: Colors.black, fontSize: 19),
+            textAlign: TextAlign.justify,
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            '7.- El alumno(a) deberá regresar el horario firmado de recibido al correo de División de Estudios: dep_cdaltamirano@tecnm.mx.',
+            style: TextStyle(color: Colors.black, fontSize: 19),
+            textAlign: TextAlign.justify,
+          ),
         ],
       )),
     ),
