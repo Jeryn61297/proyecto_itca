@@ -1,12 +1,12 @@
 //import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:proyecto_itca/src/pag/calendario.dart';
-import 'package:proyecto_itca/src/pag/croquis.dart';
 
 import 'package:proyecto_itca/src/pag/fold_carreras/carreras.dart';
 import 'package:proyecto_itca/src/pag/infor.dart';
 import 'package:proyecto_itca/src/pag/inscripciones.dart';
 import 'package:proyecto_itca/src/pag/oficinas.dart';
+import 'package:proyecto_itca/src/pag/calendario.dart';
+import 'package:proyecto_itca/src/pag/croquis.dart';
 import 'package:proyecto_itca/src/pag/tarifas.dart';
 import 'package:proyecto_itca/src/pag/venta_plantas.dart';
 

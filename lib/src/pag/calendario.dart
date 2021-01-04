@@ -15,8 +15,8 @@ class CalendarioPage extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 0),
             child: Column(
               children: <Widget>[
-                _Titulo(),
-                _Image1(),
+                //_Titulo(),
+                //_Image1(),
                 _Image2(),
               ],
             ),
@@ -40,22 +40,11 @@ Widget _Titulo() {
   );
 }
 
-Widget _Image1() {
-  return Container(
-    width: double.infinity,
-    height: 200,
-    color: Colors.blue,
-    child: Image(
-      image: AssetImage('assets/images/5.jpg'),
-    ),
-  );
-}
-
 Widget _Image2() {
   return Container(
     width: double.infinity,
-    height: 180,
-    color: Colors.yellow,
+    height: 650,
+    //color: Colors.yellow,
     child: Image(
       image: AssetImage('assets/images/1000.jpg'),
     ),
