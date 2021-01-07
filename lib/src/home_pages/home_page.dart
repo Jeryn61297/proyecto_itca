@@ -146,7 +146,7 @@ class HomePage extends StatelessWidget {
               style: TextStyle(color: Colors.black54, fontSize: 18.0),
             ),
             accountEmail: new Text(
-              'cd_alta@yahoo.com',
+              'cd_altamirano@tecnm.mx',
               style: TextStyle(color: Colors.white, fontSize: 16.0),
             ),
             currentAccountPicture: new CircleAvatar(

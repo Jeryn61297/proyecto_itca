@@ -184,7 +184,7 @@ Widget _Contacto() {
               Text(' 7671047475'),
               Spacer(),
               Text(''),
-              Text(' it_alta@yahoo.com'),
+              Text(' cd_altamirano@tecnm.mx'),
               Spacer(),
               Text('Instituto Tecnológico \n  de Cd Altamirano')
             ],
