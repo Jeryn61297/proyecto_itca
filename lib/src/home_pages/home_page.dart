@@ -2,9 +2,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_itca/src/pag/fold_carreras/carreras.dart';
+import 'package:proyecto_itca/src/pag/fold_oficinas.dart/oficinas.dart';
 import 'package:proyecto_itca/src/pag/infor.dart';
 import 'package:proyecto_itca/src/pag/inscripciones.dart';
-import 'package:proyecto_itca/src/pag/oficinas.dart';
+
 import 'package:proyecto_itca/src/pag/calendario.dart';
 import 'package:proyecto_itca/src/pag/croquis.dart';
 import 'package:proyecto_itca/src/pag/tarifas.dart';
@@ -183,6 +184,7 @@ class HomePage extends StatelessWidget {
           ),
           Divider(),
           //----------------------------------------------
+
           ListTile(
             leading: Icon(Icons.business_center, color: Colors.lightBlue),
             trailing: Icon(Icons.keyboard_arrow_right),
