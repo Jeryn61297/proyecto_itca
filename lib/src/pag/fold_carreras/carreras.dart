@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/pag/fold_carreras/informatica.dart';
 
 class CarrerasPage extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class CarrerasPage extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 _TituloPage(),
-                _Botones(),
+                _Botones(context),
               ],
             ),
           )
@@ -29,7 +30,7 @@ Widget _TituloPage() {
     child: Container(
         alignment: Alignment.center,
         width: double.infinity,
-        height: 170,
+        height: 150,
         //color: Colors.grey[400],
         child: Text(
           'El TecNM Campus Cd. Altamirano cuenta con las siguientes carreras:',
@@ -40,7 +41,7 @@ Widget _TituloPage() {
   );
 }
 
-Widget _Botones() {
+Widget _Botones(context) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 5),
     child: Container(
@@ -56,7 +57,13 @@ Widget _Botones() {
                 child: Text(
                   'Ing Informatica',
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              InformaticaPage()));
+                },
                 color: Colors.blue[400],
                 textColor: Colors.white,
               ),

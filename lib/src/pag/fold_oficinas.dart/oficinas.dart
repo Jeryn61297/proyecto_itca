@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/pag/fold_oficinas.dart/sistemas.dart';
 
 /*
 void main() {
@@ -19,7 +20,7 @@ class OficinasPage extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 _TituloPage(),
-                _Botones(),
+                _Botones(context),
               ],
             ),
           )
@@ -35,7 +36,7 @@ Widget _TituloPage() {
     child: Container(
         alignment: Alignment.center,
         width: double.infinity,
-        height: 170,
+        height: 150,
         //color: Colors.grey[400],
         child: Text(
           'El TecNM Campus Cd. Altamirano cuenta con los siguientes departamentos:',
@@ -46,7 +47,7 @@ Widget _TituloPage() {
   );
 }
 
-Widget _Botones() {
+Widget _Botones(context) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 5),
     child: Container(
@@ -62,7 +63,12 @@ Widget _Botones() {
                 child: Text(
                   'Sistemas y\nComputación',
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => SistemasPage()));
+                },
                 color: Colors.blue[400],
                 textColor: Colors.white,
               ),
