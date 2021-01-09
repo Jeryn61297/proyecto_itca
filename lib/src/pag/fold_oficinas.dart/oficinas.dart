@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+/*
 void main() {
   runApp(OficinasPage());
 }
+*/
 
 class OficinasPage extends StatelessWidget {
   @override
@@ -36,11 +38,11 @@ Widget _TituloPage() {
         height: 170,
         //color: Colors.grey[400],
         child: Text(
-            'El TecNM Campus Cd. Altamirano cuenta con los siguientes departamentos:',
-            style: TextStyle(
-                color: Colors.black54,
-                fontSize: 28,
-                fontWeight: FontWeight.w400))),
+          'El TecNM Campus Cd. Altamirano cuenta con los siguientes departamentos:',
+          style: TextStyle(
+              color: Colors.black, fontSize: 28, fontWeight: FontWeight.w400),
+          textAlign: TextAlign.justify,
+        )),
   );
 }
 
@@ -50,7 +52,7 @@ Widget _Botones() {
     child: Container(
         height: 390,
         width: double.infinity,
-        color: Colors.white60,
+        color: Colors.cyan[100],
         child: GridView.count(
           crossAxisCount: 2,
           childAspectRatio: 4 / 3,
@@ -97,7 +99,7 @@ Widget _Botones() {
                   'Gestión\nTecnologica',
                 ),
                 onPressed: () {},
-                color: Colors.green[300],
+                color: Colors.green[600],
                 textColor: Colors.white,
               ),
             ),
@@ -115,7 +117,7 @@ Widget _Botones() {
                   'Servicios\nEscolares',
                 ),
                 onPressed: () {},
-                color: Colors.blue[800],
+                color: Colors.purple,
                 textColor: Colors.white,
               ),
             ),
@@ -148,7 +150,7 @@ class Muestra extends StatelessWidget {
             SizedBox(height: 10),
             Icon(
               Icons.business_center_rounded,
-              color: Colors.black54,
+              color: Colors.blue[900],
               size: 60,
             )
           ],
