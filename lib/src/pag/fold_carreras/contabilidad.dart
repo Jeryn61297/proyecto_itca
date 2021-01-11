@@ -32,7 +32,7 @@ Widget _TituloPage() {
   return Container(
     alignment: Alignment.center,
     width: double.infinity,
-    height: 80,
+    height: 70,
     color: Colors.grey[300],
     child: Text(
       'CONTADOR PUBLICO\nCOPU-2010-205',
