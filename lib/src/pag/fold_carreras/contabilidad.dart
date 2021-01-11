@@ -35,7 +35,7 @@ Widget _TituloPage() {
     height: 80,
     color: Colors.grey[300],
     child: Text(
-      'INGENIERÍA INFORMÁTICA\nIINF-2010-220',
+      'CONTADOR PUBLICO\nCOPU-2010-205',
       style: TextStyle(
           color: Colors.black, fontSize: 24, fontWeight: FontWeight.w500),
       textAlign: TextAlign.center,
@@ -48,7 +48,7 @@ Widget _Objetivo() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 200,
+      height: 220,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
@@ -63,7 +63,7 @@ Widget _Objetivo() {
             textAlign: TextAlign.start,
           ),
           Text(
-            'Formar profesionales competentes en el diseño, desarrollo, implmentación y administración de proyectos informáticos con una visión sistématica, tecnológica y estratégica; ofreciendo soluciones innovadoras e integrales a las organizaciones de acuerdo con las necesidades actuales; comprometidos con su entorno, desempeñandose con actitud ética, emprendedora y de liderazgo.',
+            'Formar profesionales competitivos, capaces de diseñar, establecer, aplicar, controlar, y evaluar sistemas de información financiera, administrativa y fiscal, dentro del marco legal vigente para la toma de desiciones de las entidades económicas nacionales e internacionales, con una actitud ética, crítica, emprendedora y de liderazgo, a través de la investigación y el uso de la tecnología de la información y comunicaciones, fomentando el desarrollo sustentable.',
             style: TextStyle(color: Colors.black, fontSize: 15),
             textAlign: TextAlign.justify,
           ),
@@ -103,7 +103,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Administración para Informática.\n> Fundamentos de investigación.\n> Fundamentos de programación.\n> Taller de ética.\n> Cálculo diferencial.\n> Desarrollo sustentable. ',
+              '> Introducción a la contabilidad financiera\n> Administración\n> Álgebra lineal\n> Fundamentos de derecho\n> Desarrollo humano\n> Fundamentos de investigación',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -117,7 +117,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Administración de los recursos y función informatica.\n> Física para informática.\n> Programación orientada a objetos.\n> Contabilidad financiera.\n> Cálculo integral.\n> Matemáticas discretas. ',
+              '> Contabilidad financiera I\n> Taller de ética\n> Cálculo diferencial e integral\n> Derecho mercantil\n> Dinámica social\n> Estadística administrativa I\n> Comunicación humana.',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -131,7 +131,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Fundamentos de sistemas de información.\n> Sistemas electrónicos para informática.\n> Estructura de datos.\n> Costos empresariales.\n> Álgebra lineal.\n> Probabilidad y estadística. ',
+              '> Contabilidad financiera II\n> Mercadotecnia\n> Matemáticas financieras\n> Derecho laboral y seguridad social\n> Gestión del talento humano\n> Estadística administrativa II\n> Taller de informática I.',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -145,7 +145,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Taller de investigación I.\n> Arquitectura de computadoras.\n> Administración y organización de datos.\n> Fundamentos de telecomunicaciones.\n> Sistemas operativos I.\n> Investigación de operaciones.',
+              '> Contabilidad de sociedades\n>Sistemas de costos históricos\n> Microeconomía\n> Derecho tributario\n> Análisis e interpretación de estados financieros\n> Taller de investigación I.\n> Desarrollo sustentable.',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -159,7 +159,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Análisis y modelado de sistemas de información.\n> Tecnologías e interfaces de computadoras.\n> Fundamentos de bases de datos.\n> Redes de computadoras.\n> Sistemas operativos II.\n> Taller de legislación informática.',
+              '> Contabilidad avanzada\n> Sistemas de costos predeterminados\n> Macroeconomía\n> Impuestos personas morales\n> Fundamentos de auditoría\n> Taller de investigación II\n> Administración de la producción y de las operacones.',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -173,7 +173,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Desarrollo e implementación de sistemas de información.\n> Auditoría en informática.\n> Taller de base de datos.\n> Interconectividad de redes.\n> Desarrollo de aplicaciones web.',
+              '> Contabilidad internacional\n> Gestión y toma de decisiones\n> Administración estratégica\n> Impuestos personas físicas\n> Auditoría para efectos financieros\n> Economía internacional\n> Planeación financiera',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -187,7 +187,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Calidad en los sistemas de información.\n> Fundamentos de gestión de servicios de TI.\n> Tópicos de bases de datos.\n> Admininstración de servidores.\n> Programación en ambiente cliente/servidor.\n> Taller de investigación II.',
+              '> Seminario de contaduría\n> Elaboración y evaluación de proyectos de inversión\n> Otros impuestos y contribuciones\n> Auditoría para efectos fiscales\n> Taller de informática II\n> Alternativas de inversión y financiamiento',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -201,7 +201,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Taller de emprendedores\n> Estrategias de gestión de servicios de TI.\n> Inteligencia de negocios.\n> Desarrollo de aplicaciones para dispositivos móviles.\n> Seguridad informatica.',
+              '> No hay materias en el plan de estudio',
               style: TextStyle(
                 fontSize: 16,
               ),
