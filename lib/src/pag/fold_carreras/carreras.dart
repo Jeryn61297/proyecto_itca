@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/contabilidad.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/informatica.dart';
+import 'package:proyecto_itca/src/pag/fold_carreras/ing_admi.dart';
 
 class CarrerasPage extends StatelessWidget {
   @override
@@ -88,7 +89,12 @@ Widget _Botones(context) {
                 child: Text(
                   'Ing Administración',
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => IngadmiPage()));
+                },
                 color: Colors.red,
                 textColor: Colors.white,
               ),
