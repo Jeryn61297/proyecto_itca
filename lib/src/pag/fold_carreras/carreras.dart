@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/pag/fold_carreras/contabilidad.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/informatica.dart';
 
 class CarrerasPage extends StatelessWidget {
@@ -71,7 +72,13 @@ Widget _Botones(context) {
             Muestra(
               child: RaisedButton(
                 child: Text('Contador Publico'),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              ContabilidadPage()));
+                },
                 color: Colors.yellow[500],
                 textColor: Colors.grey[700],
               ),
