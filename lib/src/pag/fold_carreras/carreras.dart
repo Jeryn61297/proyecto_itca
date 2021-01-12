@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/pag/fold_carreras/biologia.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/contabilidad.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/informatica.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/ing_admi.dart';
@@ -126,7 +127,12 @@ Widget _Botones(context) {
             Muestra(
               child: RaisedButton(
                 child: Text('Lic Biologia'),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => BiologiaPage()));
+                },
                 color: Colors.lime,
                 textColor: Colors.white,
               ),
