@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/contabilidad.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/informatica.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/ing_admi.dart';
+import 'package:proyecto_itca/src/pag/fold_carreras/lic_admi.dart';
 
 class CarrerasPage extends StatelessWidget {
   @override
@@ -102,7 +103,12 @@ Widget _Botones(context) {
             Muestra(
               child: RaisedButton(
                 child: Text('Lic Administración'),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => LicadmiPage()));
+                },
                 color: Colors.orange,
                 textColor: Colors.white,
               ),
