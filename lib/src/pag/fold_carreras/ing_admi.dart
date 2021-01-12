@@ -91,7 +91,7 @@ Widget _Semestres() {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 9),
     child: Container(
-        height: 220,
+        height: 250,
         width: double.infinity,
         child: ListView(
           children: [
