@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/pag/fold_carreras/agronomia.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/biologia.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/contabilidad.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/informatica.dart';
@@ -119,7 +120,12 @@ Widget _Botones(context) {
                 child: Text(
                   'Ing Agronomia',
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => AgronomiaPage()));
+                },
                 color: Colors.green[600],
                 textColor: Colors.white,
               ),
