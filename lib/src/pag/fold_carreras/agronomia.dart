@@ -173,7 +173,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '>  ',
+              '> Genética general\n> Nutrición animal\n> Entomología\n> Geomática\n> Taller de investigación I\n> Figuras asociativas para la producción',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -187,7 +187,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> ----------------',
+              '> Cultivos energéticos\n> Planificación y dirección de la empresa agropecuaria\n> Modelos matemáticos aplicados a la agricultura\n> Manejo integral de cuencas hidrográficas\n> Taller de investigación II\n> Fitopatología',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -201,7 +201,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> ----------',
+              '> Higiene pecuaria\n> Uso eficiente del agua',
               style: TextStyle(
                 fontSize: 16,
               ),
