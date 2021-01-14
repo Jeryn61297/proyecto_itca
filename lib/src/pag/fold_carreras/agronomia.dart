@@ -103,7 +103,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> ',
+              '> Álgebra lineal\n> Biología celular\n> Fundamentos de investigación\n> Taller de ética\n> Agroquímica\n> Tecnologías de la información y comunicaciones',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -117,7 +117,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> ---------------',
+              '> Cálculo diferencial\n> Botánica general\n> Física\n> Edafología\n> Bioquímica\n> Zoología',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -131,7 +131,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> ---------------------',
+              '> Cálculo integral\n> Botaníca sistemática\n> Mecanización agropecuaria\n> Agroecología\n> Microbiología\n> Agroclimatología',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -145,7 +145,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> --------------',
+              '> Estadística\n> Fisiología vegetal\n> Fisiología animal\n> Sistemas de producción agrícola\n> Sociología rural\n> Topografía',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -159,7 +159,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> ---------------',
+              '> Diseños experimentales\n> Nutrición vegetal\n> Hidraulica\n> Sistemas de producción pecuaria\n> Gestión empresarial\n> Desarrollo sustentable',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -173,7 +173,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '>  ------------',
+              '>  ',
               style: TextStyle(
                 fontSize: 16,
               ),
