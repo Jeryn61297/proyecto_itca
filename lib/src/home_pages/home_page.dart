@@ -55,9 +55,7 @@ class HomePage extends StatelessWidget {
                     Align(
                       alignment: Alignment.topRight,
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
+                    SizedBox(height: 20),
                     Expanded(
                       child: Stack(
                         children: <Widget>[
