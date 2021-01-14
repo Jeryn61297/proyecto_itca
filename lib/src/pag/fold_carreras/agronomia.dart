@@ -7,7 +7,7 @@ class AgronomiaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ing. Agronomia'),
+        title: Text('Ing. AgronomÍa'),
       ),
       body: Stack(
         children: <Widget>[
@@ -35,7 +35,7 @@ Widget _TituloPage() {
     height: 65,
     color: Colors.grey[300],
     child: Text(
-      'INGENIERIA EN AGRONOMÍA\nLBIO-2010-233',
+      'INGENIERÍA EN AGRONOMÍA\nIAGR-2010-214',
       style: TextStyle(
           color: Colors.black, fontSize: 21, fontWeight: FontWeight.w500),
       textAlign: TextAlign.center,
@@ -48,7 +48,7 @@ Widget _Objetivo() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 180,
+      height: 190,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
@@ -63,7 +63,7 @@ Widget _Objetivo() {
             textAlign: TextAlign.start,
           ),
           Text(
-            '-----------.',
+            'Formar profesionistas en el campo de la agronomía capaces de generar, adaptar, trasferir tecnología y desarrollar procesos de producción agropecuaria, con base en estandares de calidad, vocación de servicio, visión creativa y emprendedora, comprometidos con la sociedad y el manejo sustentable de los recursos naturales.',
             style: TextStyle(color: Colors.black, fontSize: 16),
             textAlign: TextAlign.justify,
           ),
@@ -103,7 +103,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> ----',
+              '> ',
               style: TextStyle(
                 fontSize: 16,
               ),
