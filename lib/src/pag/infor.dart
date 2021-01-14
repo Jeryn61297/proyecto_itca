@@ -71,10 +71,10 @@ Widget _Datos() {
     padding: EdgeInsets.symmetric(horizontal: 25),
     child: Container(
       width: double.infinity,
-      height: 450,
+      height: 400,
+      //color: Colors.blue[50],
       child: Column(
         children: [
-          Text('   '),
           Text(
             'Misión',
             style: TextStyle(
@@ -88,8 +88,7 @@ Widget _Datos() {
             style: TextStyle(color: Colors.black, fontSize: 16),
             textAlign: TextAlign.justify,
           ),
-          Text(''),
-          Text(''),
+          SizedBox(height: 15),
           Text(
             'Visión',
             style: TextStyle(
@@ -100,9 +99,7 @@ Widget _Datos() {
             style: TextStyle(color: Colors.black, fontSize: 16),
             textAlign: TextAlign.justify,
           ),
-          //Spacer(),
-          Text(''),
-          Text(''),
+          SizedBox(height: 15),
           Text(
             'Forma de pago',
             style: TextStyle(
@@ -123,70 +120,62 @@ Widget _Datos() {
 Widget _Contacto() {
   return SafeArea(
     child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
         width: double.infinity,
-        height: 280,
-        //color: Colors.grey,
+        height: 155,
+        //color: Colors.yellow[50],
         child: Row(children: <Widget>[
           Column(
             children: [
               //-ICONO1---------------------
               Icon(
-                Icons.phone,
+                Icons.phone_android,
                 color: Colors.black54,
                 size: 35,
               ),
+              SizedBox(height: 8),
               Text(
-                'Número',
+                '767-672-1213',
                 style: TextStyle(fontSize: 13),
               ),
 
-              Spacer(),
+              SizedBox(height: 15),
               //-ICONO2-------------------------
               Icon(
-                Icons.phone_android,
+                Icons.phone,
                 color: Colors.lightGreen,
                 size: 35,
               ),
-              Text('WhatsApp'),
-              Spacer(),
+              SizedBox(height: 4),
+              Text('767-104-7475'),
+            ],
+          ),
+          SizedBox(width: 25),
+          Column(
+            children: [
               //-ICONO3----------------------------
               Icon(
                 Icons.mail,
                 color: Colors.yellow,
                 size: 35,
               ),
+              SizedBox(height: 4),
               Text(
-                'E-mail',
+                'cd_altamirano@tecnm.mx',
                 style: TextStyle(fontSize: 13),
               ),
-
-              Spacer(),
+              SizedBox(height: 8),
               //-ICONO4----------------------------
               Icon(
                 Icons.computer,
                 color: Colors.blue,
                 size: 35,
               ),
+              SizedBox(height: 4),
               Text(
-                'Facebook',
+                'Instituto Tecnológico \n  de Cd Altamirano',
                 style: TextStyle(fontSize: 13),
               ),
-            ],
-          ),
-          Spacer(),
-          Column(
-            children: [
-              Text(''),
-              Text(' 767 672-1213'),
-              Spacer(),
-              Text(''),
-              Text(' 7671047475'),
-              Spacer(),
-              Text(''),
-              Text(' cd_altamirano@tecnm.mx'),
-              Spacer(),
-              Text('Instituto Tecnológico \n  de Cd Altamirano')
             ],
           )
         ])),
