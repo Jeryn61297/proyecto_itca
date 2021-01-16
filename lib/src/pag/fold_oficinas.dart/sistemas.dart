@@ -28,10 +28,10 @@ Widget _TituloPage() {
   return Container(
     alignment: Alignment.center,
     width: double.infinity,
-    height: 100,
-    color: Colors.green,
-    child: Text('Responsable del departamento',
+    height: 200,
+    //color: Colors.green,
+    child: Text('Pagina en construcción',
         style: TextStyle(
-            color: Colors.black, fontSize: 24, fontWeight: FontWeight.w500)),
+            color: Colors.black, fontSize: 54, fontWeight: FontWeight.w500)),
   );
 }

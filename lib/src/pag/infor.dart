@@ -20,7 +20,6 @@ class InforPage extends StatelessWidget {
                 _Direccion(),
                 _Datos(),
                 _Contacto(),
-                _Barra()
               ],
             ),
           )
@@ -179,13 +178,5 @@ Widget _Contacto() {
             ],
           )
         ])),
-  );
-}
-
-Widget _Barra() {
-  return Container(
-    width: double.infinity,
-    height: 10,
-    color: Colors.grey,
   );
 }
