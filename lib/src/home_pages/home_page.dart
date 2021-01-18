@@ -1,6 +1,7 @@
 //import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+import 'package:proyecto_itca/src/pag/curso_ingles.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/carreras.dart';
 import 'package:proyecto_itca/src/pag/fold_oficinas.dart/oficinas.dart';
 import 'package:proyecto_itca/src/pag/infor.dart';
@@ -282,7 +283,13 @@ class HomePage extends StatelessWidget {
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('Curso capacitación'),
             subtitle: Text('Lengua extranjera Ingles'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                      builder: (BuildContext context) => InglesPage()));
+            },
           ),
           Divider(),
           //----------------------------------------------
