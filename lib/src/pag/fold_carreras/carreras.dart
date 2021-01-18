@@ -36,7 +36,7 @@ Widget _TituloPage() {
     child: Container(
         alignment: Alignment.center,
         width: double.infinity,
-        height: 150,
+        height: 130,
         //color: Colors.grey[400],
         child: Text(
           'El TecNM Campus Cd. Altamirano cuenta con las siguientes carreras:',
