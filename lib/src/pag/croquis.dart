@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/home_pages/home_page.dart';
 
 class CroquisPage extends StatelessWidget {
   static final String routeName = 'croquis';
@@ -6,20 +7,20 @@ class CroquisPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Croquis del Tec'),
-      ),
-      body: Stack(
-        children: <Widget>[
-          SingleChildScrollView(
-            //padding: EdgeInsets.all(20),
-            child: Column(
-              children: <Widget>[_Titulo(), _Mapa(), _Datos()],
-            ),
-          )
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Croquis del Tec'),
+        ),
+        body: Stack(
+          children: <Widget>[
+            SingleChildScrollView(
+              //padding: EdgeInsets.all(20),
+              child: Column(
+                children: <Widget>[_Titulo(), _Mapa(), _Datos()],
+              ),
+            )
+          ],
+        ),
+        bottomNavigationBar: _bottomNavigationBar(context));
   }
 }
 
@@ -77,5 +78,16 @@ Widget _Datos() {
         )
       ],
     ),
+  );
+}
+
+Widget _bottomNavigationBar(context) {
+  return FloatingActionButton(
+    child: Icon(
+      Icons.home,
+      color: Colors.white,
+      size: 35,
+    ),
+    onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
   );
 }

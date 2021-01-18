@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/home_pages/home_page.dart';
 
 class AgronomiaPage extends StatelessWidget {
   static final String routeName = 'agronomia';
@@ -6,25 +7,25 @@ class AgronomiaPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Ing. AgronomÍa'),
-      ),
-      body: Stack(
-        children: <Widget>[
-          SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                SizedBox(height: 2),
-                _TituloPage(),
-                _Objetivo(),
-                _Plan(),
-                _Semestres(),
-              ],
-            ),
-          )
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Ing. AgronomÍa'),
+        ),
+        body: Stack(
+          children: <Widget>[
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  SizedBox(height: 2),
+                  _TituloPage(),
+                  _Objetivo(),
+                  _Plan(),
+                  _Semestres(),
+                ],
+              ),
+            )
+          ],
+        ),
+        bottomNavigationBar: _bottomNavigationBar(context));
   }
 }
 
@@ -222,5 +223,16 @@ Widget _Semestres() {
             ),
           ],
         )),
+  );
+}
+
+Widget _bottomNavigationBar(context) {
+  return FloatingActionButton(
+    child: Icon(
+      Icons.home,
+      color: Colors.white,
+      size: 35,
+    ),
+    onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
   );
 }

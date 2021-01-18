@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/home_pages/home_page.dart';
 
 class VentaPlantasPage extends StatelessWidget {
   static final String routeName = 'ventaplantas';
@@ -6,71 +7,71 @@ class VentaPlantasPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Plantas de la región'),
-      ),
-      body: Stack(
-        children: <Widget>[
-          SingleChildScrollView(
-            padding: EdgeInsets.all(20),
-            child: Column(
-              children: <Widget>[
-                // AQUI VAN LOS NAMES DE LOS WIDGETS
-                _Targeta1(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta2(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta3(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta4(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta5(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta6(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta7(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta8(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta9(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta10(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta11(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta12(),
-                SizedBox(
-                  height: 20,
-                ),
-                _Targeta13(),
-              ],
-            ),
-          )
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Plantas de la región'),
+        ),
+        body: Stack(
+          children: <Widget>[
+            SingleChildScrollView(
+              padding: EdgeInsets.all(20),
+              child: Column(
+                children: <Widget>[
+                  // AQUI VAN LOS NAMES DE LOS WIDGETS
+                  _Targeta1(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta2(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta3(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta4(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta5(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta6(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta7(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta8(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta9(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta10(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta11(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta12(),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  _Targeta13(),
+                ],
+              ),
+            )
+          ],
+        ),
+        bottomNavigationBar: _bottomNavigationBar(context));
   }
 }
 
@@ -357,5 +358,16 @@ Widget _Targeta13() {
         Image.asset('assets/images/43.jpg'),
       ],
     ),
+  );
+}
+
+Widget _bottomNavigationBar(context) {
+  return FloatingActionButton(
+    child: Icon(
+      Icons.home,
+      color: Colors.white,
+      size: 35,
+    ),
+    onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
   );
 }

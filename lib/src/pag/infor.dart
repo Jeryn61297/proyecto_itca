@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:proyecto_itca/src/home_pages/home_page.dart';
 
 class InforPage extends StatelessWidget {
   static final String routeName = 'infor';
@@ -7,25 +8,25 @@ class InforPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Información'),
-      ),
-      body: Stack(
-        children: <Widget>[
-          SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                _TituloPage(),
-                _Foto(),
-                _Direccion(),
-                _Datos(),
-                _Contacto(),
-              ],
-            ),
-          )
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Información'),
+        ),
+        body: Stack(
+          children: <Widget>[
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  _TituloPage(),
+                  _Foto(),
+                  _Direccion(),
+                  _Datos(),
+                  _Contacto(),
+                ],
+              ),
+            )
+          ],
+        ),
+        bottomNavigationBar: _bottomNavigationBar(context));
   }
 }
 
@@ -178,5 +179,16 @@ Widget _Contacto() {
             ],
           )
         ])),
+  );
+}
+
+Widget _bottomNavigationBar(context) {
+  return FloatingActionButton(
+    child: Icon(
+      Icons.home,
+      color: Colors.white,
+      size: 35,
+    ),
+    onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
   );
 }

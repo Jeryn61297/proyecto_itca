@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/home_pages/home_page.dart';
 
 class InscripcionesPage extends StatelessWidget {
   static final String routeName = 'inscripciones';
@@ -6,26 +7,26 @@ class InscripcionesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Inscripciones'),
-      ),
-      body: Stack(
-        children: <Widget>[
-          SingleChildScrollView(
-            padding: EdgeInsets.symmetric(horizontal: 10),
-            child: Column(
-              children: <Widget>[
-                _Titulo(),
-                _Nota(),
-                _Contacto(),
-                _Titulo2(),
-                _Pasos(),
-              ],
-            ),
-          )
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Inscripciones'),
+        ),
+        body: Stack(
+          children: <Widget>[
+            SingleChildScrollView(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                children: <Widget>[
+                  _Titulo(),
+                  _Nota(),
+                  _Contacto(),
+                  _Titulo2(),
+                  _Pasos(),
+                ],
+              ),
+            )
+          ],
+        ),
+        bottomNavigationBar: _bottomNavigationBar(context));
   }
 }
 
@@ -180,5 +181,16 @@ Widget _Pasos() {
         ],
       )),
     ),
+  );
+}
+
+Widget _bottomNavigationBar(context) {
+  return FloatingActionButton(
+    child: Icon(
+      Icons.home,
+      color: Colors.white,
+      size: 35,
+    ),
+    onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
   );
 }

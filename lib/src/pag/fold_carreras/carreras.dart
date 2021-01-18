@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_itca/src/home_pages/home_page.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/agronomia.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/biologia.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/contabilidad.dart';
@@ -10,22 +11,22 @@ class CarrerasPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Oferta Educativa'),
-      ),
-      body: Stack(
-        children: <Widget>[
-          SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                _TituloPage(),
-                _Botones(context),
-              ],
-            ),
-          )
-        ],
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Oferta Educativa'),
+        ),
+        body: Stack(
+          children: <Widget>[
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  _TituloPage(),
+                  _Botones(context),
+                ],
+              ),
+            )
+          ],
+        ),
+        bottomNavigationBar: _bottomNavigationBar(context));
   }
 }
 
@@ -182,4 +183,15 @@ class Muestra extends StatelessWidget {
       ),
     );
   }
+}
+
+Widget _bottomNavigationBar(context) {
+  return FloatingActionButton(
+    child: Icon(
+      Icons.home,
+      color: Colors.white,
+      size: 35,
+    ),
+    onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
+  );
 }
