@@ -71,7 +71,7 @@ Widget _Datos() {
     padding: EdgeInsets.symmetric(horizontal: 25),
     child: Container(
       width: double.infinity,
-      height: 400,
+      height: 540,
       //color: Colors.blue[50],
       child: Column(
         children: [
@@ -122,7 +122,7 @@ Widget _Contacto() {
     child: Container(
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
         width: double.infinity,
-        height: 155,
+        height: 175,
         //color: Colors.yellow[50],
         child: Row(children: <Widget>[
           Column(
