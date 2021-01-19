@@ -16,8 +16,8 @@ class InglesPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   SizedBox(height: 10),
-                  _Titulo(),
                   _Name(),
+                  _Funciones(),
                   _Datos(),
                   _Contacto(),
                 ],
@@ -29,50 +29,88 @@ class InglesPage extends StatelessWidget {
   }
 }
 
-Widget _Titulo() {
+Widget _Name() {
   return Container(
-    alignment: Alignment.center,
+    //padding: EdgeInsets.symmetric(horizontal: 10),
     width: double.infinity,
-    height: 45,
-    color: Colors.black54,
-    child: Text(
-      'Curso de Ingles',
-      style: TextStyle(
-          color: Colors.white, fontSize: 25, fontWeight: FontWeight.w600),
+    height: 110,
+    color: Colors.purple[50],
+    child: Column(
+      children: <Widget>[
+        SizedBox(height: 10),
+        Text(
+          'Cordinadora de lenguas extranjeras:',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 26,
+            fontWeight: FontWeight.w500,
+          ),
+          textAlign: TextAlign.center,
+        ),
+        SizedBox(height: 6),
+        Text(
+          'L.A. Amparo Ortiz Mariano',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 22,
+            fontWeight: FontWeight.w500,
+          ),
+          textAlign: TextAlign.left,
+        ),
+      ],
     ),
   );
 }
 
-Widget _Name() {
+Widget _Funciones() {
   return Padding(
-    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+    padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 200,
-      //color: Colors.green,
-      child: ListView(
+      height: 440,
+      //color: Colors.yellowAccent,
+      child: Column(
         children: <Widget>[
-          Text('Responsable:',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500)),
-          SizedBox(height: 5),
-          Text('L.A. Amparo Ortiz Mariano',
-              style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500)),
-          SizedBox(height: 23),
-          Text('Funciones:',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500)),
-          SizedBox(height: 5),
-          Text('> Inscribir a los alumnos', style: TextStyle(fontSize: 17)),
-          Text('> Generar listas de asistencia',
-              style: TextStyle(fontSize: 17)),
-          Text('> Entregar constancias ', style: TextStyle(fontSize: 17)),
-          Text('> Situaciones generadas durante el curso',
-              style: TextStyle(fontSize: 17)),
+          SizedBox(height: 10),
+          Text(
+            'Funciones',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 22,
+              fontWeight: FontWeight.w700,
+            ),
+            textAlign: TextAlign.start,
+          ),
+          SizedBox(height: 7),
+          Text(
+              '> Difundir la oferta de capacitación a los aprendientes por medio de clases de Lenguas Extranjeras.',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text(
+              '> Organizar y cordinar la asignación de facilitadores, aulas y horarios para la atención del servcio.',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text(
+              '> Cordinar, controlar y dar seguimiento a los programas de enseñanza-aprendizaje de lenguas extranjeras.',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text(
+              '> Verificar que los y las facilitadores utilicen la metodologá y los recursos didácticos descritos en la instrumentación de enseñanza',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text(
+              '> Elaborar los reportes estadísticos del aprovechamiento de los aprendientes, así como la eficiencia y la calidad de los servicios educativos.',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text(
+              '> Llevar a cabo las gestiones para la obtención del "registro de validación de la Cordinación de Lenguas Extranjeras ante el Programa Coordinador de Lengua Extranjera".',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
         ],
       ),
     ),
@@ -144,7 +182,7 @@ Widget _Contacto() {
           ),
           SizedBox(height: 4),
           Text(
-            'amparito@tecnm.mx',
+            'leng_cdaltamirano@tecnm.mx',
             style: TextStyle(fontSize: 13),
           ),
         ],
