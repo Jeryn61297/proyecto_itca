@@ -3,6 +3,7 @@ import 'package:proyecto_itca/src/home_pages/home_page.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/agronomia.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/biologia.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/contabilidad.dart';
+import 'package:proyecto_itca/src/pag/fold_carreras/gestion.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/informatica.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/ing_admi.dart';
 import 'package:proyecto_itca/src/pag/fold_carreras/lic_admi.dart';
@@ -149,7 +150,12 @@ Widget _Botones(context) {
                 child: Text(
                   'Ing Gestion\nEmpresarial',
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => GestionPage()));
+                },
                 color: Colors.purple,
                 textColor: Colors.white,
               ),
