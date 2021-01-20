@@ -33,8 +33,8 @@ Widget _Name() {
   return Container(
     //padding: EdgeInsets.symmetric(horizontal: 10),
     width: double.infinity,
-    height: 110,
-    color: Colors.purple[50],
+    height: 140,
+    color: Colors.pink[50],
     child: Column(
       children: <Widget>[
         SizedBox(height: 10),
@@ -67,7 +67,7 @@ Widget _Funciones() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 440,
+      height: 610,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
@@ -122,7 +122,7 @@ Widget _Datos() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 420,
+      height: 650,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[

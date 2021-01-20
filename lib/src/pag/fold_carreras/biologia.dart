@@ -49,7 +49,7 @@ Widget _Objetivo() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 180,
+      height: 240,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
@@ -92,7 +92,7 @@ Widget _Semestres() {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 9),
     child: Container(
-        height: 249,
+        height: 330,
         width: double.infinity,
         child: ListView(
           children: [
@@ -202,7 +202,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Acuacultura\n> Uso de la biodiversidad\n> manejo y producción de biofertilizantes',
+              '> Acuacultura\n> Uso de la biodiversidad\n> Manejo y producción de biofertilizantes\n> Taller de Des. empresarial\n> Taller de investigación II\n> Control biológico',
               style: TextStyle(
                 fontSize: 16,
               ),

@@ -33,7 +33,7 @@ Widget _TituloPage() {
   return Container(
     alignment: Alignment.center,
     width: double.infinity,
-    height: 65,
+    height: 70,
     color: Colors.grey[300],
     child: Text(
       'INGENIERÍA EN AGRONOMÍA\nIAGR-2010-214',
@@ -49,7 +49,7 @@ Widget _Objetivo() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 190,
+      height: 280,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
@@ -92,7 +92,7 @@ Widget _Semestres() {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 9),
     child: Container(
-        height: 249,
+        height: 280,
         width: double.infinity,
         child: ListView(
           children: [
@@ -202,7 +202,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Higiene pecuaria\n> Uso eficiente del agua',
+              '> Higiene pecuaria\n> Uso eficiente del agua\n> Taller de investigación II\n> Horticultura tropical\n> Tecnología poscosecha',
               style: TextStyle(
                 fontSize: 16,
               ),

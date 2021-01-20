@@ -30,7 +30,7 @@ Widget _Titulo() {
     width: double.infinity,
     height: 70,
     child: Text(
-      'Imagen satelital',
+      'Vista aérea',
       style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
     ),
   );
@@ -50,7 +50,7 @@ Widget _Datos() {
   return Container(
     padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
     width: 400,
-    height: 200,
+    height: 300,
     child: Row(
       children: <Widget>[
         Column(
@@ -64,11 +64,11 @@ Widget _Datos() {
             ),
           ],
         ),
-        Spacer(),
+        SizedBox(width: 23),
         Column(
           children: [
             Text(
-              '8.- Edificio 1200 \n9.- Cafeteria \n10.- SS multiples \n11.- Cancha \n12.- Explanada \n13.- Cancha \n  Futbol',
+              '8.- Edificio 1200 \n9.- Cafeteria \n10.- Sala de usos\n multiples \n11.- Cancha \n12.- Explanada \n13.- Cancha de\n  Futbol',
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 17,

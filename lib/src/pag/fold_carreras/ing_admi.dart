@@ -50,7 +50,7 @@ Widget _Objetivo() {
     child: Container(
       width: double.infinity,
       height: 230,
-      color: Colors.yellowAccent,
+      //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
           SizedBox(height: 10),
@@ -92,7 +92,7 @@ Widget _Semestres() {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 9),
     child: Container(
-        height: 320,
+        height: 330,
         width: double.infinity,
         child: ListView(
           children: [

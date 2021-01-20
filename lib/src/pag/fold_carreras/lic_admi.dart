@@ -33,7 +33,7 @@ Widget _TituloPage() {
   return Container(
     alignment: Alignment.center,
     width: double.infinity,
-    height: 80,
+    height: 100,
     color: Colors.grey[300],
     child: Text(
       'LICENCIATURA EN ADMINISTRACIÓN\nLADM-2010-234',
@@ -49,7 +49,7 @@ Widget _Objetivo() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 170,
+      height: 230,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
@@ -92,7 +92,7 @@ Widget _Semestres() {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 9),
     child: Container(
-        height: 220,
+        height: 290,
         width: double.infinity,
         child: ListView(
           children: [

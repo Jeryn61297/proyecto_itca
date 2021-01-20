@@ -34,10 +34,10 @@ Widget _Titulo() {
   return Container(
     alignment: Alignment.center,
     width: double.infinity,
-    height: 70,
+    height: 100,
     child: Text(
       'Proceso de Inscripción',
-      style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
+      style: TextStyle(fontSize: 27, fontWeight: FontWeight.w500),
     ),
   );
 }
@@ -47,7 +47,7 @@ Widget _Nota() {
     padding: EdgeInsets.all(3),
     child: Container(
       width: double.infinity,
-      height: 200,
+      height: 260,
       //color: Colors.purple[100],
       child: Column(
         children: <Widget>[
@@ -105,10 +105,11 @@ Widget _Titulo2() {
   return Container(
     alignment: Alignment.center,
     width: double.infinity,
-    height: 50,
+    height: 90,
+    //color: Colors.blue,
     child: Text(
       'Proceso de Reinscripción',
-      style: TextStyle(fontSize: 27, fontWeight: FontWeight.w500),
+      style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
     ),
   );
 }
@@ -118,7 +119,7 @@ Widget _Pasos() {
     padding: EdgeInsets.symmetric(horizontal: 5),
     child: Container(
       width: double.infinity,
-      height: 980,
+      height: 1400,
       color: Colors.cyan[50],
       child: (Column(
         children: <Widget>[

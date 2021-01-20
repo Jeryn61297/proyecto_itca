@@ -37,12 +37,12 @@ Widget _TituloPage() {
     child: Container(
         alignment: Alignment.center,
         width: double.infinity,
-        height: 150,
+        height: 180,
         //color: Colors.grey[400],
         child: Text(
           'El TecNM Campus Cd. Altamirano cuenta con los siguientes departamentos:',
           style: TextStyle(
-              color: Colors.black, fontSize: 28, fontWeight: FontWeight.w400),
+              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w400),
           textAlign: TextAlign.justify,
         )),
   );
@@ -52,7 +52,7 @@ Widget _Botones(context) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 5),
     child: Container(
-        height: 390,
+        height: 450,
         width: double.infinity,
         color: Colors.cyan[100],
         child: GridView.count(

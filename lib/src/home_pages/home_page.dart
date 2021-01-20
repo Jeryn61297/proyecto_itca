@@ -229,14 +229,16 @@ class HomePage extends StatelessWidget {
           ),
           Divider(),
           //----------------------------------------------
+          /*
           ListTile(
             leading: Icon(Icons.my_location, color: Colors.lightBlue),
             trailing: Icon(Icons.keyboard_arrow_right),
             title: Text('Ubicación'),
             subtitle: Text('Como llegar'),
             onTap: () {},
-          ),
-          Divider(),
+          ), */
+          //Divider(),
+
           //----------------------------------------------
           /*
           ListTile(

@@ -202,7 +202,14 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> No hay materias en el plan de estudio',
+              'ESPECIALIDAD: Contabilidad e impuestos\n> Contabilidad electrónica\n> Contribuciones estatales\n> Taller de investigación II\n> Aran. com. ex.\n> Top. Cod. fiscales\n> Impuestos federales',
+              style: TextStyle(
+                fontSize: 16,
+              ),
+            ),
+            SizedBox(height: 15),
+            Text(
+              'ESPECIALIDAD: Finanzas\n> Taller de investigación II\n> Estrategias financieras directas\n> Valuación de empresas\n> Finanzas empresariales\n> Diseño y gestíon de empresas',
               style: TextStyle(
                 fontSize: 16,
               ),
