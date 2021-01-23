@@ -52,7 +52,7 @@ Widget _Botones(context) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 5),
     child: Container(
-        height: 380,
+        height: 450,
         width: double.infinity,
         color: Colors.cyan[100],
         child: GridView.count(

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_itca/src/home_pages/home_page.dart';
 
-class SistemasPage extends StatelessWidget {
-  static final String routeName = 'sistemas';
+class DepartamentosPage extends StatelessWidget {
+  static final String routeName = 'departamentos';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('División de estudios'),
+          title: Text('Contactos'),
         ),
         body: Stack(
           children: <Widget>[
@@ -19,6 +19,12 @@ class SistemasPage extends StatelessWidget {
                   _Name(),
                   _Funciones(),
                   _Contacto(),
+                  _Oficina2(),
+                  _Funciones2(),
+                  _Contacto2(),
+                  _Oficina3(),
+                  _Funciones3(),
+                  _Contacto3(),
                 ],
               ),
             )
@@ -32,7 +38,7 @@ Widget _Name() {
   return Container(
     padding: EdgeInsets.symmetric(horizontal: 14),
     width: double.infinity,
-    height: 160,
+    height: 120,
     color: Colors.purple[100],
     child: Column(
       children: <Widget>[
@@ -41,7 +47,7 @@ Widget _Name() {
           'Jefa del Depto de Division de Estudios Profesionales:',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 24,
+            fontSize: 19,
             fontWeight: FontWeight.w500,
           ),
           textAlign: TextAlign.center,
@@ -51,7 +57,7 @@ Widget _Name() {
           'M.F. Shelley Yesmin Castillo Charco',
           style: TextStyle(
             color: Colors.black87,
-            fontSize: 20,
+            fontSize: 16,
             fontWeight: FontWeight.w500,
           ),
           textAlign: TextAlign.left,
@@ -66,56 +72,26 @@ Widget _Funciones() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 290,
+      height: 270,
       //color: Colors.yellowAccent,
-      child: ListView(
+      child: Column(
         children: <Widget>[
           SizedBox(height: 10),
           Text(
-            'Dudas y/o tramites:',
+            'Dudas y/o tramites sobre:',
             style: TextStyle(
               color: Colors.black,
-              fontSize: 22,
+              fontSize: 20,
               fontWeight: FontWeight.w700,
             ),
             textAlign: TextAlign.start,
           ),
           SizedBox(height: 7),
-          Text('> Residencia profesional',
+          Text(
+              '> Residencia profesional\n > Titulación\n > Traslado estudiantil\n > Convalidación de estudios\n > Equivalencia de estudios\n > Movilidad estudiantil\n > Salida lateral\n > Cursos de verano\n > Inscripciones y reinscripciones',
               style: TextStyle(color: Colors.black, fontSize: 15),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
-          Text('> Titulación',
-              style: TextStyle(color: Colors.black, fontSize: 15),
-              textAlign: TextAlign.justify),
-          SizedBox(height: 9),
-          Text('> Traslado estudiantil',
-              style: TextStyle(color: Colors.black, fontSize: 15),
-              textAlign: TextAlign.justify),
-          SizedBox(height: 9),
-          Text('> Convalidación de estudios',
-              style: TextStyle(color: Colors.black, fontSize: 15),
-              textAlign: TextAlign.justify),
-          SizedBox(height: 9),
-          Text('> Equivalencia de estudios',
-              style: TextStyle(color: Colors.black, fontSize: 15),
-              textAlign: TextAlign.justify),
-          SizedBox(height: 9),
-          Text('> Movilidad estudiantil',
-              style: TextStyle(color: Colors.black, fontSize: 15),
-              textAlign: TextAlign.justify),
-          SizedBox(height: 9),
-          Text('> Salida lateral',
-              style: TextStyle(color: Colors.black, fontSize: 15),
-              textAlign: TextAlign.justify),
-          SizedBox(height: 9),
-          Text('> Cursos de verano',
-              style: TextStyle(color: Colors.black, fontSize: 15),
-              textAlign: TextAlign.justify),
-          SizedBox(height: 9),
-          Text('> Inscripciones y reinscripciones',
-              style: TextStyle(color: Colors.black, fontSize: 15),
-              textAlign: TextAlign.justify),
         ],
       ),
     ),
@@ -127,10 +103,21 @@ Widget _Contacto() {
     child: Container(
       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
       width: double.infinity,
-      height: 80,
-      color: Colors.yellow[50],
+      height: 150,
+      //color: Colors.yellow[50],
       child: Column(
         children: [
+          Icon(
+            Icons.phone,
+            color: Colors.greenAccent[400],
+            size: 35,
+          ),
+          SizedBox(height: 4),
+          Text(
+            '7321087295',
+            style: TextStyle(fontSize: 13),
+          ),
+          SizedBox(height: 10),
           Icon(
             Icons.mail,
             color: Colors.yellow[600],
@@ -155,5 +142,205 @@ Widget _bottomNavigationBar(context) {
       size: 35,
     ),
     onPressed: () => Navigator.pushNamed(context, HomePage.routeName),
+  );
+}
+
+Widget _Oficina2() {
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 14),
+    width: double.infinity,
+    height: 100,
+    color: Colors.green[500],
+    child: Column(
+      children: <Widget>[
+        SizedBox(height: 10),
+        Text(
+          'Jefa de Servicios Escolares:',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 19,
+            fontWeight: FontWeight.w500,
+          ),
+          textAlign: TextAlign.center,
+        ),
+        SizedBox(height: 10),
+        Text(
+          'L.I. Verónica Reyes Reyes',
+          style: TextStyle(
+            color: Colors.black87,
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          ),
+          textAlign: TextAlign.left,
+        ),
+      ],
+    ),
+  );
+}
+
+Widget _Funciones2() {
+  return Padding(
+    padding: EdgeInsets.symmetric(horizontal: 10),
+    child: Container(
+      width: double.infinity,
+      height: 200,
+      //color: Colors.yellowAccent,
+      child: Column(
+        children: <Widget>[
+          SizedBox(height: 10),
+          Text(
+            'Dudas y/o tramites sobre:',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+            ),
+            textAlign: TextAlign.start,
+          ),
+          SizedBox(height: 7),
+          Text(
+              '> Becas\n > Títulos\n > Cédulas\n > Certificados\n > Constancias\n > Fichas de nuevo ingreso ',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+        ],
+      ),
+    ),
+  );
+}
+
+Widget _Contacto2() {
+  return SafeArea(
+    child: Container(
+      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+      width: double.infinity,
+      height: 150,
+      //color: Colors.yellow[50],
+      child: Column(
+        children: [
+          Icon(
+            Icons.phone,
+            color: Colors.greenAccent[400],
+            size: 35,
+          ),
+          SizedBox(height: 4),
+          Text(
+            '7671040821',
+            style: TextStyle(fontSize: 13),
+          ),
+          SizedBox(height: 10),
+          Icon(
+            Icons.mail,
+            color: Colors.yellow[600],
+            size: 35,
+          ),
+          SizedBox(height: 4),
+          Text(
+            'se_cdaltamirano@tecnm.mx',
+            style: TextStyle(fontSize: 13),
+          ),
+        ],
+      ),
+    ),
+  );
+}
+
+Widget _Oficina3() {
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 14),
+    width: double.infinity,
+    height: 120,
+    color: Colors.blue[100],
+    child: Column(
+      children: <Widget>[
+        SizedBox(height: 10),
+        Text(
+          'Jefe de Gestión Tecnológica y Vinculación:',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 19,
+            fontWeight: FontWeight.w500,
+          ),
+          textAlign: TextAlign.center,
+        ),
+        SizedBox(height: 10),
+        Text(
+          'M.F. Esequiel Santiago Santiago',
+          style: TextStyle(
+            color: Colors.black87,
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          ),
+          textAlign: TextAlign.left,
+        ),
+      ],
+    ),
+  );
+}
+
+Widget _Funciones3() {
+  return Padding(
+    padding: EdgeInsets.symmetric(horizontal: 10),
+    child: Container(
+      width: double.infinity,
+      height: 140,
+      //color: Colors.yellowAccent,
+      child: Column(
+        children: <Widget>[
+          SizedBox(height: 10),
+          Text(
+            'Dudas y/o tramites sobre:',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+            ),
+            textAlign: TextAlign.start,
+          ),
+          SizedBox(height: 7),
+          Text(
+              ' > Servicio Social\n > Convenios para Residencia\nProfesional y Servicio Social ',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+        ],
+      ),
+    ),
+  );
+}
+
+Widget _Contacto3() {
+  return SafeArea(
+    child: Container(
+      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+      width: double.infinity,
+      height: 150,
+      //color: Colors.yellow[50],
+      child: Column(
+        children: [
+          Icon(
+            Icons.phone,
+            color: Colors.greenAccent[400],
+            size: 35,
+          ),
+          SizedBox(height: 4),
+          Text(
+            '7671137755',
+            style: TextStyle(fontSize: 13),
+          ),
+          SizedBox(height: 10),
+          Icon(
+            Icons.mail,
+            color: Colors.yellow[600],
+            size: 35,
+          ),
+          SizedBox(height: 4),
+          Text(
+            'vin_cdaltamirano@tecnm.mx',
+            style: TextStyle(fontSize: 13),
+          ),
+        ],
+      ),
+    ),
   );
 }

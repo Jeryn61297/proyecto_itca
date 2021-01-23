@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_itca/src/home_pages/home_page.dart';
+import 'package:proyecto_itca/src/pag/fold_oficinas.dart/enactus.dart';
 import 'package:proyecto_itca/src/pag/fold_oficinas.dart/sistemas.dart';
-
-/*
-void main() {
-  runApp(OficinasPage());
-}
-*/
 
 class OficinasPage extends StatelessWidget {
   @override
@@ -33,16 +28,16 @@ class OficinasPage extends StatelessWidget {
 
 Widget _TituloPage() {
   return Padding(
-    padding: EdgeInsets.symmetric(horizontal: 10),
+    padding: EdgeInsets.symmetric(horizontal: 23),
     child: Container(
         alignment: Alignment.center,
         width: double.infinity,
-        height: 180,
+        height: 200,
         //color: Colors.grey[400],
         child: Text(
-          'El TecNM Campus Cd. Altamirano cuenta con los siguientes departamentos:',
+          'El TecNM Campus Cd. Altamirano continúa con sus actividades de manera virtual y ponemos a su disposición los contactos para atenderlos en sus dudas y/o tramites.',
           style: TextStyle(
-              color: Colors.black, fontSize: 25, fontWeight: FontWeight.w400),
+              color: Colors.black, fontSize: 20, fontWeight: FontWeight.w400),
           textAlign: TextAlign.justify,
         )),
   );
@@ -52,7 +47,7 @@ Widget _Botones(context) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 5),
     child: Container(
-        height: 450,
+        height: 160,
         width: double.infinity,
         color: Colors.cyan[100],
         child: GridView.count(
@@ -62,13 +57,14 @@ Widget _Botones(context) {
             Muestra(
               child: RaisedButton(
                 child: Text(
-                  'División de\nEstudios',
+                  'Oficinas\nITCA',
                 ),
                 onPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (BuildContext context) => SistemasPage()));
+                          builder: (BuildContext context) =>
+                              DepartamentosPage()));
                 },
                 color: Colors.purple[200],
                 textColor: Colors.white,
@@ -76,63 +72,14 @@ Widget _Botones(context) {
             ),
             Muestra(
               child: RaisedButton(
-                child: Text('Sistemas y\nComputación'),
-                onPressed: () {},
+                child: Text('Enactus\nHUB ITCA'),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => EnactusPage()));
+                },
                 color: Colors.blue[400],
-                textColor: Colors.white,
-              ),
-            ),
-            Muestra(
-              child: RaisedButton(
-                child: Text(
-                  'Comunicación \n  y  Difusión',
-                ),
-                onPressed: () {},
-                color: Colors.red[200],
-                textColor: Colors.white,
-              ),
-            ),
-            Muestra(
-              child: RaisedButton(
-                child: Text('Recursos \nMateriales'),
-                onPressed: () {},
-                color: Colors.orange[300],
-                textColor: Colors.white,
-              ),
-            ),
-            Muestra(
-              child: RaisedButton(
-                child: Text(
-                  'Gestión\nTecnologica',
-                ),
-                onPressed: () {},
-                color: Colors.green[600],
-                textColor: Colors.white,
-              ),
-            ),
-            Muestra(
-              child: RaisedButton(
-                child: Text('Recursos\nFinancieros'),
-                onPressed: () {},
-                color: Colors.red[400],
-                textColor: Colors.white,
-              ),
-            ),
-            Muestra(
-              child: RaisedButton(
-                child: Text(
-                  'Servicios\nEscolares',
-                ),
-                onPressed: () {},
-                color: Colors.purple,
-                textColor: Colors.white,
-              ),
-            ),
-            Muestra(
-              child: RaisedButton(
-                child: Text('Otra oficina'),
-                onPressed: () {},
-                color: Colors.orange[800],
                 textColor: Colors.white,
               ),
             ),
