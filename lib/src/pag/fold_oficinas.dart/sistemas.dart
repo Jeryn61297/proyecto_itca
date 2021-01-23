@@ -8,7 +8,7 @@ class SistemasPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Sistemas y Compututación'),
+          title: Text('División de estudios'),
         ),
         body: Stack(
           children: <Widget>[
@@ -33,12 +33,12 @@ Widget _Name() {
     padding: EdgeInsets.symmetric(horizontal: 14),
     width: double.infinity,
     height: 160,
-    color: Colors.blue[50],
+    color: Colors.purple[100],
     child: Column(
       children: <Widget>[
         SizedBox(height: 10),
         Text(
-          'Jefa del Depto de Sistemas y computación:',
+          'Jefa del Depto de Division de Estudios Profesionales:',
           style: TextStyle(
             color: Colors.black,
             fontSize: 24,
@@ -48,9 +48,9 @@ Widget _Name() {
         ),
         SizedBox(height: 10),
         Text(
-          'MTI. Lucero de Jesus Ascencio Antúnez',
+          'M.F. Shelley Yesmin Castillo Charco',
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.black87,
             fontSize: 20,
             fontWeight: FontWeight.w500,
           ),
@@ -66,13 +66,13 @@ Widget _Funciones() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 410,
+      height: 290,
       //color: Colors.yellowAccent,
-      child: Column(
+      child: ListView(
         children: <Widget>[
           SizedBox(height: 10),
           Text(
-            'Funciones',
+            'Dudas y/o tramites:',
             style: TextStyle(
               color: Colors.black,
               fontSize: 22,
@@ -81,26 +81,41 @@ Widget _Funciones() {
             textAlign: TextAlign.start,
           ),
           SizedBox(height: 7),
-          Text(
-              '> Difundir la oferta de capacitación a los aprendientes sobre los cursos MOOCS.',
+          Text('> Residencia profesional',
               style: TextStyle(color: Colors.black, fontSize: 15),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
-          Text(
-              '> Organizar y cordinar la asignación de facilitadores, aulas y horarios para la atención del servcio.',
+          Text('> Titulación',
               style: TextStyle(color: Colors.black, fontSize: 15),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
-          Text(
-              '> Cordinar, controlar y dar seguimiento a los programas de enseñanza-aprendizaje de lenguas extranjeras.',
+          Text('> Traslado estudiantil',
               style: TextStyle(color: Colors.black, fontSize: 15),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
-          Text(
-              '> Verificar que los y las facilitadores utilicen la metodologá y los recursos didácticos descritos en la instrumentación de enseñanza',
+          Text('> Convalidación de estudios',
               style: TextStyle(color: Colors.black, fontSize: 15),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
+          Text('> Equivalencia de estudios',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text('> Movilidad estudiantil',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text('> Salida lateral',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text('> Cursos de verano',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
+          SizedBox(height: 9),
+          Text('> Inscripciones y reinscripciones',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+              textAlign: TextAlign.justify),
         ],
       ),
     ),
@@ -123,7 +138,7 @@ Widget _Contacto() {
           ),
           SizedBox(height: 4),
           Text(
-            'lucerodejesus.aa@cdaltamirano.tecnm.mx',
+            'dep_cdaltamirano@tecnm.mx',
             style: TextStyle(fontSize: 13),
           ),
         ],

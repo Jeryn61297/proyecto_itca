@@ -62,7 +62,7 @@ Widget _Botones(context) {
             Muestra(
               child: RaisedButton(
                 child: Text(
-                  'Sistemas y\nComputación',
+                  'División de\nEstudios',
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -70,16 +70,16 @@ Widget _Botones(context) {
                       MaterialPageRoute(
                           builder: (BuildContext context) => SistemasPage()));
                 },
-                color: Colors.blue[400],
+                color: Colors.purple[200],
                 textColor: Colors.white,
               ),
             ),
             Muestra(
               child: RaisedButton(
-                child: Text('Desarrollo\nAcademico'),
+                child: Text('Sistemas y\nComputación'),
                 onPressed: () {},
-                color: Colors.yellow[500],
-                textColor: Colors.grey[700],
+                color: Colors.blue[400],
+                textColor: Colors.white,
               ),
             ),
             Muestra(
