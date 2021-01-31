@@ -8,7 +8,7 @@ class AgronomiaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Ing. AgronomÍa'),
+          title: Text('Ing. Agronomía'),
         ),
         body: Stack(
           children: <Widget>[
@@ -64,7 +64,7 @@ Widget _Objetivo() {
             textAlign: TextAlign.start,
           ),
           Text(
-            'Formar profesionistas en el campo de la agronomía capaces de generar, adaptar, trasferir tecnología y desarrollar procesos de producción agropecuaria, con base en estandares de calidad, vocación de servicio, visión creativa y emprendedora, comprometidos con la sociedad y el manejo sustentable de los recursos naturales.',
+            'Formar profesionistas en el campo de la agronomía capaces de generar, adaptar, trasferir tecnología y desarrollar procesos de producción agropecuaria, con base en estándares de calidad, vocación de servicio, visión creativa y emprendedora, comprometidos con la sociedad y el manejo sustentable de los recursos naturales.',
             style: TextStyle(color: Colors.black, fontSize: 16),
             textAlign: TextAlign.justify,
           ),
@@ -160,7 +160,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Diseños experimentales\n> Nutrición vegetal\n> Hidraulica\n> Sistemas de producción pecuaria\n> Gestión empresarial\n> Desarrollo sustentable',
+              '> Diseños experimentales\n> Nutrición vegetal\n> Hidráulica\n> Sistemas de producción pecuaria\n> Gestión empresarial\n> Desarrollo sustentable',
               style: TextStyle(
                 fontSize: 16,
               ),

@@ -32,12 +32,12 @@ Widget _TituloPage() {
     child: Container(
         alignment: Alignment.center,
         width: double.infinity,
-        height: 200,
+        height: 250,
         //color: Colors.grey[400],
         child: Text(
-          'El TecNM Campus Cd. Altamirano continúa con sus actividades de manera virtual y ponemos a su disposición los contactos para atenderlos en sus dudas y/o tramites.',
+          'El TecNM Campus Cd. Altamirano continúa con sus actividades de manera virtual y ponemos a su disposición los contactos para atenderlos en sus dudas y/o trámites.',
           style: TextStyle(
-              color: Colors.black, fontSize: 20, fontWeight: FontWeight.w400),
+              color: Colors.black, fontSize: 19, fontWeight: FontWeight.w400),
           textAlign: TextAlign.justify,
         )),
   );

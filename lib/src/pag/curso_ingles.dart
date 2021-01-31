@@ -42,7 +42,7 @@ Widget _Name() {
           'Cordinadora de lenguas extranjeras:',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 26,
+            fontSize: 23,
             fontWeight: FontWeight.w500,
           ),
           textAlign: TextAlign.center,
@@ -52,7 +52,7 @@ Widget _Name() {
           'L.A. Amparo Ortiz Mariano',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 22,
+            fontSize: 19,
             fontWeight: FontWeight.w500,
           ),
           textAlign: TextAlign.left,
@@ -67,7 +67,7 @@ Widget _Funciones() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 610,
+      height: 570,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
@@ -76,7 +76,7 @@ Widget _Funciones() {
             'Funciones',
             style: TextStyle(
               color: Colors.black,
-              fontSize: 22,
+              fontSize: 20,
               fontWeight: FontWeight.w700,
             ),
             textAlign: TextAlign.start,
@@ -84,32 +84,32 @@ Widget _Funciones() {
           SizedBox(height: 7),
           Text(
               '> Difundir la oferta de capacitación a los aprendientes por medio de clases de Lenguas Extranjeras.',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
           Text(
               '> Organizar y cordinar la asignación de facilitadores, aulas y horarios para la atención del servcio.',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
           Text(
               '> Cordinar, controlar y dar seguimiento a los programas de enseñanza-aprendizaje de lenguas extranjeras.',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
           Text(
-              '> Verificar que los y las facilitadores utilicen la metodologá y los recursos didácticos descritos en la instrumentación de enseñanza',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              '> Verificar que los y las facilitadores utilicen la metodología y los recursos didácticos descritos en la instrumentación de enseñanza',
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
           Text(
               '> Elaborar los reportes estadísticos del aprovechamiento de los aprendientes, así como la eficiencia y la calidad de los servicios educativos.',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
           Text(
               '> Llevar a cabo las gestiones para la obtención del "registro de validación de la Cordinación de Lenguas Extranjeras ante el Programa Coordinador de Lengua Extranjera".',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
         ],
       ),
@@ -122,7 +122,7 @@ Widget _Datos() {
     padding: EdgeInsets.symmetric(horizontal: 10),
     child: Container(
       width: double.infinity,
-      height: 650,
+      height: 560,
       //color: Colors.yellowAccent,
       child: Column(
         children: <Widget>[
@@ -131,33 +131,34 @@ Widget _Datos() {
             'Forma de inscripción',
             style: TextStyle(
               color: Colors.black,
-              fontSize: 22,
+              fontSize: 20,
               fontWeight: FontWeight.w700,
             ),
             textAlign: TextAlign.start,
           ),
+          SizedBox(height: 15),
           Text(
               '> Hacer el depósito correspondiente (alumnos: \$850, participantes externos \$1,200) para el curso de lengua extrangera Ingles al número de cuenta del ITCA: 65507605412 del banco Santander.',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
           Text(
-              '> Enviar imagen del comprobante de depósito al correo: leng_cdaltamirano@tecnm.mx el cúal sera intercambiado por el comprobante oficial emitido por el Depto de Recursos Financieros.',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              '> Enviar imagen del comprobante de depósito al correo: leng_cdaltamirano@tecnm.mx el cúal será intercambiado por el comprobante oficial emitido por el Depto de Recursos Financieros.',
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
           Text(
               '> Llenar la solicitud de inscripción en la siguiente liga, donde deberán anexar su comprobante de pago oficial. ',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           Text(
               'https://forms.office.com/Pages/ResponsePage.aspx?id=1nPLeT_4pkq9UYiWgdJuqyohAwI5poJEnZyRISYDTdVUOE5NN05JUU1VNIg1RFJSSFdORDNFN1U2Ui4u',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
           Text(
               '> Anexar al enlace anterior copia de identificación oficial (credencial de estudiante, INE) y copia de la constancia de nivel anterior, acreditado, emitido por el TecNM Campus Cd. Altamirano.',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 14),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),
         ],

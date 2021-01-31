@@ -30,7 +30,7 @@ Widget _TituloPage() {
     child: Text(
       'ENACTUS\nHUB-ITCA',
       style: TextStyle(
-          color: Colors.black, fontSize: 24, fontWeight: FontWeight.w500),
+          color: Colors.black, fontSize: 19, fontWeight: FontWeight.w500),
       textAlign: TextAlign.center,
     ),
   );
@@ -47,20 +47,20 @@ Widget _Objetivo() {
         children: <Widget>[
           SizedBox(height: 10),
           Text(
-            'El Enectus HUB-ITCA hace la cordial invitación para que lleves a cabo tu idea de negocio en base como aportación a la sociedad y medio ambiente, donde uno d elos requisitos primordiales es que el equipo de trabajo conste de seis alumnos multidisciplinarios de los cuales desempeñaran diversos roles.',
+            'El Enectus HUB-ITCA hace la cordial invitación para que lleves a cabo tu idea de negocio en base como aportación a la sociedad y medio ambiente, donde uno de los requisitos primordiales es que el equipo de trabajo conste de seis alumnos multidisciplinarios de los cuáles desempeñarán diversos roles.',
             style: TextStyle(color: Colors.black, fontSize: 15),
             textAlign: TextAlign.justify,
           ),
           SizedBox(height: 10),
           Text(
-            'Aunado a esto obtendran los siguientes beneficios:',
+            'Aunado a esto obtendrán los siguientes beneficios:',
             style: TextStyle(
                 color: Colors.black, fontSize: 15, fontWeight: FontWeight.w500),
             textAlign: TextAlign.justify,
           ),
           SizedBox(height: 10),
           Text(
-            'A) Los estudiantes de 2º, 4º, 6º, 8º semestres, que realicen un proyecto y este sea aprovado, acreditaran 2 creditos de actividades complementarias',
+            'A) Los estudiantes de 2º, 4º, 6º, 8º semestres, que realicen un proyecto y este sea aprobado, acreditaran 2 créditos de actividades complementarias',
             style: TextStyle(
               color: Colors.black,
               fontSize: 15,
@@ -69,7 +69,7 @@ Widget _Objetivo() {
           ),
           SizedBox(height: 10),
           Text(
-            'B) Para los estudiantes de 6º semestre que participen y obtengan resultados favorables, acreditaran su Servicio Social.',
+            'B) Para los estudiantes de 6º semestre que participen y obtengan resultados favorables, acreditarán su Servició Social.',
             style: TextStyle(
               color: Colors.black,
               fontSize: 15,
@@ -78,7 +78,7 @@ Widget _Objetivo() {
           ),
           SizedBox(height: 10),
           Text(
-            'C) Adicionalmente como lo dispone el anexo 1, Documento de apoyo para la Cumbre Estudiantil de Negocios e Innovación Económica (CENITAE) 2021, los proyectos que sean participes en la etapa nacional acreditaran su Residencia profesional.',
+            'C) Adicionalmente como lo dispone el anexo 1, Documento de apoyo para la Cumbre Estudiantil de Negocios e Innovación Económica (CENITAE) 2021, los proyectos que sean partícipes en la etapa nacional acreditarán su Residencia profesional.',
             style: TextStyle(
               color: Colors.black,
               fontSize: 15,

@@ -44,7 +44,7 @@ Widget _Name() {
       children: <Widget>[
         SizedBox(height: 10),
         Text(
-          'Jefa del Depto de Division de Estudios Profesionales:',
+          'Jefa del Depto de División de Estudios Profesionales:',
           style: TextStyle(
             color: Colors.black,
             fontSize: 19,
@@ -78,7 +78,7 @@ Widget _Funciones() {
         children: <Widget>[
           SizedBox(height: 10),
           Text(
-            'Dudas y/o tramites sobre:',
+            'Dudas y/o trámites sobre:',
             style: TextStyle(
               color: Colors.black,
               fontSize: 20,
@@ -189,7 +189,7 @@ Widget _Funciones2() {
         children: <Widget>[
           SizedBox(height: 10),
           Text(
-            'Dudas y/o tramites sobre:',
+            'Dudas y/o trámites sobre:',
             style: TextStyle(
               color: Colors.black,
               fontSize: 20,
@@ -289,7 +289,7 @@ Widget _Funciones3() {
         children: <Widget>[
           SizedBox(height: 10),
           Text(
-            'Dudas y/o tramites sobre:',
+            'Dudas y/o trámites sobre:',
             style: TextStyle(
               color: Colors.black,
               fontSize: 20,
@@ -299,7 +299,7 @@ Widget _Funciones3() {
           ),
           SizedBox(height: 7),
           Text(
-              ' > Servicio Social\n > Convenios para Residencia\nProfesional y Servicio Social ',
+              ' > Servició Social\n > Convenios para Residencia\nProfesional y Servició Social ',
               style: TextStyle(color: Colors.black, fontSize: 15),
               textAlign: TextAlign.justify),
           SizedBox(height: 9),

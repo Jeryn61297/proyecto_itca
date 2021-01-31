@@ -11,19 +11,14 @@ class InforPage extends StatelessWidget {
         appBar: AppBar(
           title: Text('Información'),
         ),
-        body: Stack(
+        body: ListView(
           children: <Widget>[
-            SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  _TituloPage(),
-                  _Foto(),
-                  _Direccion(),
-                  _Datos(),
-                  _Contacto(),
-                ],
-              ),
-            )
+            _TituloPage(),
+            _Foto(),
+            _Direccion(),
+            SizedBox(height: 15),
+            _Datos(),
+            _Contacto(),
           ],
         ),
         bottomNavigationBar: _bottomNavigationBar(context));
@@ -38,7 +33,7 @@ Widget _TituloPage() {
       //color: Colors.green,
       child: Text('  Instituto Tecnológico \n     de Cd. Altamirano',
           style: TextStyle(
-              color: Colors.black, fontSize: 28, fontWeight: FontWeight.w500)));
+              color: Colors.black, fontSize: 26, fontWeight: FontWeight.w500)));
 }
 
 Widget _Foto() {
@@ -55,11 +50,14 @@ Widget _Foto() {
 Widget _Direccion() {
   return Container(
     width: double.infinity,
-    height: 50,
+    height: 60,
     child: Column(
       children: [
-        Text(
-            ' Av. Pungarabato poniente S/n, colonia Morelos, \n                Municipio de Cd. Altamirano, Gro.'),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 26),
+          child: Text(
+              '    Av. Pungarabato poniente S/n, colonia\nMorelos, Municipio de Cd. Altamirano, Gro.'),
+        ),
       ],
     ),
     //color: Colors.blue,
@@ -71,7 +69,7 @@ Widget _Datos() {
     padding: EdgeInsets.symmetric(horizontal: 25),
     child: Container(
       width: double.infinity,
-      height: 540,
+      height: 460,
       //color: Colors.blue[50],
       child: Column(
         children: [
@@ -79,40 +77,39 @@ Widget _Datos() {
             'Misión',
             style: TextStyle(
               color: Colors.black,
-              fontSize: 29,
+              fontSize: 21,
               fontWeight: FontWeight.w700,
             ),
           ),
           Text(
             'Formar profesionales competitivos, con sentido humanista que contribuyan al desarrollo de país.',
-            style: TextStyle(color: Colors.black, fontSize: 16),
+            style: TextStyle(color: Colors.black, fontSize: 14),
             textAlign: TextAlign.justify,
           ),
           SizedBox(height: 15),
           Text(
             'Visión',
             style: TextStyle(
-                color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
+                color: Colors.black, fontSize: 21, fontWeight: FontWeight.w700),
           ),
           Text(
             'Ser una Institución educativa de alto desempeño con valores declarados que impulse su desarrollo sostenido a través de la mejora continua.',
-            style: TextStyle(color: Colors.black, fontSize: 16),
+            style: TextStyle(color: Colors.black, fontSize: 14),
             textAlign: TextAlign.justify,
           ),
           SizedBox(height: 15),
           Text(
             'Forma de pago',
             style: TextStyle(
-                color: Colors.black, fontSize: 29, fontWeight: FontWeight.w700),
+                color: Colors.black, fontSize: 21, fontWeight: FontWeight.w700),
           ),
           Text(
-            'Los depositos dirigidos al Instituto Tecnológico de  Cd. Altamirano deberan ser realizados al banco Santander S.A. al número de cuenta: 65-50760541-2 Clave interbancaria: 014266655076054126 \nTitular: TECNM INSTITUTO TECNOLÓGICO DE CD. ALTAMIRANO ',
-            style: TextStyle(color: Colors.black, fontSize: 16),
+            'Los depósitos dirigidos al Instituto Tecnológico de  Cd. Altamirano deberán ser realizados al banco Santander S.A. al número de cuenta: 65-50760541-2 Clave interbancaria: 014266655076054126 \nTitular: TECNM INSTITUTO TECNOLÓGICO DE CD. ALTAMIRANO ',
+            style: TextStyle(color: Colors.black, fontSize: 14),
             textAlign: TextAlign.justify,
           ),
         ],
       ),
-      //color: Colors.yellow,
     ),
   );
 }

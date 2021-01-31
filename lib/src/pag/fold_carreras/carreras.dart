@@ -33,16 +33,16 @@ class CarrerasPage extends StatelessWidget {
 
 Widget _TituloPage() {
   return Padding(
-    padding: EdgeInsets.symmetric(horizontal: 10),
+    padding: EdgeInsets.symmetric(horizontal: 20),
     child: Container(
         alignment: Alignment.center,
         width: double.infinity,
-        height: 135,
+        height: 160,
         //color: Colors.grey[400],
         child: Text(
           'El TecNM Campus Cd. Altamirano cuenta con las siguientes carreras:',
           style: TextStyle(
-              color: Colors.black, fontSize: 28, fontWeight: FontWeight.w400),
+              color: Colors.black, fontSize: 20, fontWeight: FontWeight.w400),
           textAlign: TextAlign.justify,
         )),
   );
@@ -62,7 +62,7 @@ Widget _Botones(context) {
             Muestra(
               child: RaisedButton(
                 child: Text(
-                  'Ing Informatica',
+                  'Ing Informática',
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -77,7 +77,7 @@ Widget _Botones(context) {
             ),
             Muestra(
               child: RaisedButton(
-                child: Text('Contador Publico'),
+                child: Text('Contador Público'),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -120,7 +120,7 @@ Widget _Botones(context) {
             Muestra(
               child: RaisedButton(
                 child: Text(
-                  'Ing Agronomia',
+                  'Ing Agronomía',
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -134,7 +134,7 @@ Widget _Botones(context) {
             ),
             Muestra(
               child: RaisedButton(
-                child: Text('Lic Biologia'),
+                child: Text('Lic Biología'),
                 onPressed: () {
                   Navigator.push(
                       context,
@@ -148,7 +148,7 @@ Widget _Botones(context) {
             Muestra(
               child: RaisedButton(
                 child: Text(
-                  'Ing Gestion\nEmpresarial',
+                  'Ing Gestión\nEmpresarial',
                 ),
                 onPressed: () {
                   Navigator.push(

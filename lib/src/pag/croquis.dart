@@ -31,7 +31,7 @@ Widget _Titulo() {
     height: 70,
     child: Text(
       'Vista aérea',
-      style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
+      style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
     ),
   );
 }
@@ -59,19 +59,19 @@ Widget _Datos() {
               '1.- Edificio 1000 \n2.- Edificio 700 \n3.- Edificio 100 \n4.- Edificio 200 \n5.- Biblioteca \n6.- Edificio 400 \n7.- Laboratorios',
               style: TextStyle(
                   color: Colors.black,
-                  fontSize: 17,
+                  fontSize: 15,
                   fontWeight: FontWeight.w500),
             ),
           ],
         ),
-        SizedBox(width: 23),
+        SizedBox(width: 25),
         Column(
           children: [
             Text(
               '8.- Edificio 1200 \n9.- Cafeteria \n10.- Sala de usos\n multiples \n11.- Cancha \n12.- Explanada \n13.- Cancha de\n  Futbol',
               style: TextStyle(
                   color: Colors.black,
-                  fontSize: 17,
+                  fontSize: 15,
                   fontWeight: FontWeight.w500),
             ),
           ],

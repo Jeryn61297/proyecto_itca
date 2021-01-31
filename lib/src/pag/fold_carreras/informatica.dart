@@ -64,7 +64,7 @@ Widget _Objetivo() {
             textAlign: TextAlign.start,
           ),
           Text(
-            'Formar profesionales competentes en el diseño, desarrollo, implmentación y administración de proyectos informáticos con una visión sistématica, tecnológica y estratégica; ofreciendo soluciones innovadoras e integrales a las organizaciones de acuerdo con las necesidades actuales; comprometidos con su entorno, desempeñandose con actitud ética, emprendedora y de liderazgo.',
+            'Formar profesionales competentes en el diseño, desarrollo, implementación y administración de proyectos informáticos con una visión sistemática, tecnológica y estratégica; ofreciendo soluciones innovadoras e integrales a las organizaciones de acuerdo con las necesidades actuales; comprometidos con su entorno, desempeñándose con actitud ética, emprendedora y de liderazgo.',
             style: TextStyle(color: Colors.black, fontSize: 15),
             textAlign: TextAlign.justify,
           ),
@@ -118,7 +118,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Administración de los recursos y función informatica.\n> Física para informática.\n> Programación orientada a objetos.\n> Contabilidad financiera.\n> Cálculo integral.\n> Matemáticas discretas. ',
+              '> Administración de los recursos y función informática.\n> Física para informática.\n> Programación orientada a objetos.\n> Contabilidad financiera.\n> Cálculo integral.\n> Matemáticas discretas. ',
               style: TextStyle(
                 fontSize: 16,
               ),
@@ -202,7 +202,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Taller de emprendedores\n> Estrategias de gestión de servicios de TI.\n> Inteligencia de negocios.\n> Desarrollo de aplicaciones para dispositivos móviles.\n> Seguridad informatica.',
+              '> Taller de emprendedores\n> Estrategias de gestión de servicios de TI.\n> Inteligencia de negocios.\n> Desarrollo de aplicaciones para dispositivos móviles.\n> Seguridad informática.',
               style: TextStyle(
                 fontSize: 16,
               ),

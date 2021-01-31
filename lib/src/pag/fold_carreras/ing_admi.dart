@@ -104,7 +104,7 @@ Widget _Semestres() {
                   fontWeight: FontWeight.w500),
             ),
             Text(
-              '> Taller de administración I\n> Tecnologías de la información\n> Contabilidad aplicada a la ingeniería\n> Dinamica social\n> Fundamentos de investigación\n> Cálculo diferencial',
+              '> Taller de administración I\n> Tecnologías de la información\n> Contabilidad aplicada a la ingeniería\n> Dinámica social\n> Fundamentos de investigación\n> Cálculo diferencial',
               style: TextStyle(
                 fontSize: 16,
               ),

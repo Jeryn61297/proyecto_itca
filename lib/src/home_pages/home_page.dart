@@ -84,7 +84,8 @@ class HomePage extends StatelessWidget {
                               width: 30,
                               height: 30,
                               child: Icon(
-                                Icons.arrow_back_outlined,
+                                Icons.dehaze,
+                                //Icons.arrow_back_outlined,
                                 color: Colors.black54,
                                 size: 38,
                               ),
@@ -109,7 +110,7 @@ class HomePage extends StatelessWidget {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text: "Practicas estudiantiles\n",
+                              text: "Prácticas estudiantiles\n",
                               style: TextStyle(
                                   color: Colors.black87,
                                   fontSize: 22,
